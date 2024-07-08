@@ -13,10 +13,6 @@ class dao {
     aplicação de testes, simplificação da manutenção e promoção de boas práticas, tornando a aplicação mais limpa e
     segura.
 
-
-
-
-
     Sim, além do Java Persistence API (JPA), existem várias outras especificações Java EE (Enterprise Edition) que
     abordam diferentes aspectos do desenvolvimento de aplicativos empresariais. Algumas das principais especificações
     incluem:
