@@ -2,16 +2,18 @@ package br.com.vraptor.bitBank.banco
 
 class dao {
 
-    /*DAO
-
-    O DAO (Data Access Object) é um padrão de projeto que é frequentemente usado para abstrair e encapsular o acesso a
-     um banco de dados ou a uma fonte de dados similar em uma aplicação. O principal objetivo do DAO é separar a
+    /*O DAO (Data Access Object) é um padrão de projeto que é frequentemente usado para abstrair e encapsular o acesso
+    a um banco de dados ou a uma fonte de dados similar em uma aplicação. O principal objetivo do DAO é separar a
     lógica de acesso a dados(repository) da lógica de negócios(services), proporcionando uma camada de abstração que
     facilite a manutenção e a evolução da aplicação.
 
     Além disso, o padrão DAO oferece várias vantagens, como a separação de responsabilidades, facilidade para a
     aplicação de testes, simplificação da manutenção e promoção de boas práticas, tornando a aplicação mais limpa e
     segura.
+
+
+
+
 
     Sim, além do Java Persistence API (JPA), existem várias outras especificações Java EE (Enterprise Edition) que
     abordam diferentes aspectos do desenvolvimento de aplicativos empresariais. Algumas das principais especificações
@@ -48,6 +50,8 @@ class dao {
     Essas são apenas algumas das muitas especificações Java EE disponíveis, cada uma abordando diferentes aspectos do
     desenvolvimento de aplicativos empresariais. O uso dessas especificações pode ajudar os desenvolvedores a criar
     aplicativos robustos, escaláveis e interoperáveis em Java.
+
+
 
 
     Especificação JPA e implementação Hibernate
@@ -152,6 +156,6 @@ class dao {
     escalabilidade.
     Essas são algumas das principais implementações do JPA disponíveis atualmente, cada uma com suas próprias
     características e vantagens. A escolha da implementação depende dos requisitos específicos do projeto, das
-    preferências da equipe de desenvolvimento e do ecossistema tecnológico em que o aplicativo está sendo desenvolvido.*/
-
+    preferências da equipe de desenvolvimento e do ecossistema tecnológico em que o aplicativo está sendo desenvolvido.
+    */
 }
