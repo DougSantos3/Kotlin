@@ -14,7 +14,7 @@ class dao {
 
 
 
-
+    Java EE (Enterprise Edition) e suas outras especificações
     Sim, além do Java Persistence API (JPA), existem várias outras especificações Java EE (Enterprise Edition) que
     abordam diferentes aspectos do desenvolvimento de aplicativos empresariais. Algumas das principais especificações
     incluem:
@@ -75,17 +75,12 @@ class dao {
     objeto-relacional, o Hibernate também oferece recursos avançados, como otimização de consultas, cache de segundo
     nível e suporte a herança de entidades.
 
-   Para conhecer mais a fundo sobre JPA, Hibernate e suas implementações, sugerimos consultar o curso Persistência
-    com JPA: Hibernate.
-
-
     No mundo orientado a objetos tem herança no mundo relacional não tem. Preciamos entender como essa herança vai ser
     traduzida ou mapaeada para o mundo relacional, ai temos 3 estrategias para fazer isso:
-    A primeira estrategia, temos 3 classes que representam as entidades e podem ter 3 tabelas, podemos colocar tudo lá
-    A segunda, é so ter tabelas para as classes concretas, então teria uma tabela para plano avulso, e outro para plano
-    assinatura
-    A terceira que vamos adotar é uma tabela unica onde achatamos toda a hierarquia de planos aqui, então vamos ter
-    uma tabela unica que vai conter todas as colunas que estão representados nos atributos
+    A primeira estrategia, temos 3 classes que representam as entidades e podem ter 3 tabelas, podemos colocar tudo lá,
+    a segunda, é so ter tabelas para as classes concretas, então teria uma tabela para plano avulso, e outro para plano
+    assinatura, a terceira que vamos adotar é uma tabela unica onde achatamos toda a hierarquia de planos aqui, então
+    vamos ter uma tabela unica que vai conter todas as colunas que estão representados nos atributos
 
 
 
