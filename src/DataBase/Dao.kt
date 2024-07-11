@@ -121,6 +121,7 @@ class dao {
     A anotação @ManyToMany no val ingredientes estabelece a relação de “muitos para muitos”.
 
 
+
     Anotações de relacionamento no JPA
 
 
