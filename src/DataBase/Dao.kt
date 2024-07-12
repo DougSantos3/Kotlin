@@ -15,6 +15,7 @@ class dao {
 
 
     Java EE (Enterprise Edition) e suas outras especificações
+
     Sim, além do Java Persistence API (JPA), existem várias outras especificações Java EE (Enterprise Edition) que
     abordam diferentes aspectos do desenvolvimento de aplicativos empresariais. Algumas das principais especificações
     incluem:
