@@ -90,9 +90,9 @@ class dao {
 
     @Table (name = "planos")   nomear a tabela que eles vão representar
 
-    @Inheritance (strategy = InheritanceType.SINGLE_TABLE) // ele vai receber outros dados como a herança
+    @Inheritance (strategy = InheritanceType.SINGLE_TABLE) ele vai receber outros dados como a herança
 
-    @DiscriminatorColumn(name = "tipoPlano", discriminatorType = DiscriminatorTypers.String) //coluna que vai trabalhar
+    @DiscriminatorColumn(name = "tipoPlano", discriminatorType = DiscriminatorTypers.String) coluna que vai trabalhar
 
     @DiscriminatorValue()
 
