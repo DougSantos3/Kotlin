@@ -61,9 +61,9 @@ class dao {
 
     Algumas das implementações mais populares do JPA incluem:
 
-    O JPA (Java Persistence API) e o Hibernate são tecnologias relacionadas que têm como objetivo facilitar o
-    Mapeamento Objeto-Relacional (ORM) em aplicações Java, permitindo que as pessoas desenvolvedoras trabalhem com
-    dados de bancos de dados relacionais usando objetos Java, em vez de escrever consultas SQL manualmente.
+    O Hibernate é uma tecnologia relacionadas que têm como objetivo facilitar o Mapeamento Objeto-Relacional (ORM) em
+    aplicações Java, permitindo que as pessoas desenvolvedoras trabalhem com dados de bancos de dados relacionais
+    usando objetos Java, em vez de escrever consultas SQL manualmente.
 
     O JPA é uma especificação de API Java para gerenciamento de persistência de dados. Ela define um conjunto de
     interfaces e anotações que descrevem como as entidades Java (objetos) devem ser mapeadas para tabelas de banco de
