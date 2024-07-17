@@ -82,7 +82,6 @@ class dao {
     vamos ter uma tabela unica que vai conter todas as colunas que estão representados nos atributos
 
 
-
     Anotations Hibernates
 
     @Entity identifcar a entidade
@@ -122,7 +121,6 @@ class dao {
 
 
     Anotações de relacionamento no JPA
-
 
     As anotações de relacionamento no JPA são usadas para mapear as relações entre entidades Java e as tabelas do banco
     de dados. Essas anotações ajudam a definir como as tabelas se relacionam umas com as outras, seja através de
