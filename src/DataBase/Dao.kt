@@ -119,7 +119,6 @@ class dao {
     A anotação @ManyToMany no val ingredientes estabelece a relação de “muitos para muitos”.
 
 
-
     Anotações de relacionamento no JPA
 
     As anotações de relacionamento no JPA são usadas para mapear as relações entre entidades Java e as tabelas do banco
