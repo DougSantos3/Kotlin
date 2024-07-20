@@ -1,13 +1,9 @@
 package br.com.vraptor.bitBank.banco
 
 class General {
-    /*
-    sql == noSql
-
-    Tabela == documento
-
-    query == query
-
+    /* sql    == noSql
+       tabela == documento
+       query  == query
 
     nolock
     Isso, é para não ficar locado em fila... a proxima consulta não fica esperando a consulta ser feita para ser executada a proxima
