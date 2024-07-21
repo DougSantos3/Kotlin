@@ -5,34 +5,15 @@ class General {
        tabela == documento
        query  == query
 
-    nolock
-    Isso, é para não ficar locado em fila... a proxima consulta não fica esperando a consulta ser feita para ser executada a proxima
+    Nolock: é para não ficar locado em fila, a proxima consulta não fica esperando ela ser feita para ser executada, ela
+    uso esse nolock e enquanto executa a minha eu deixo liberado para que você faça a sua também, você não precisa
+    esperar a minha terminar.
 
-    tipo
-
-    eu uso esse nolock e enquanto executa a minha consulta eu deixo liberado para que você faça a sua consulta
-
-    também
-
-    você não precisa esperar a minha terminar
-
-    é isso?
-
-    isso
-
-
-    uma não depende da outra
-
-    sem esse nolock você teria que esperar a minha acabar?
-
-    não
-
-    Sua questão é muito interessante e é muito mais profunda do que a minha simples resposta e depende de fatores como:
     O que se pretende com a consulta, o SGBD em questão e tipo de leitura que você pretende.
 
     Vamos definir dois conceitos antes:
 
-    leitura não confirmada ou suja "dirty read": ler dados de uma tabela que não foram confirmados por meio de commit.
+    Leitura não confirmada ou suja "dirty read": ler dados de uma tabela que não foram confirmados por meio de commit.
     Ou seja, dados que estão temporariamente ali e podem sumir.
 
     leitura confirmada "committed read": ler os dados que foram confirmados e que não sumirão no meio de uma transação
@@ -43,18 +24,16 @@ class General {
 
     Portanto, um dado que não está "commitado" deve ser tratado como um dado que não existe para certas situações.
     São raros casos que você precisa de uma leitura de "dados não confirmados", temporários na tabela em questão, pois
-     eles poderiam "sumir" dada alguma situação e você ficar com resultados inconsistentes no retorno.
+    eles poderiam "sumir" dada alguma situação e você ficar com resultados inconsistentes no retorno.
 
-    Em resumo: Se o seu SGBD permitir, utilize NOLOCK quando deseja visualizar dados não confirmados e não quando deseja
-     trabalhar somente com os dados que estão confirmados de fato.
-
-    Espero ter sido didático, explicando a diferença. Um abraço
+    Em resumo: Se o seu SGBD permitir, utilize NOLOCK quando deseja visualizar dados não confirmados e não quando
+    deseja trabalhar somente com os dados que estão confirmados de fato.
 
     Se você estiver lidando com transações financeiras, nunca desejará usá-lo nolock. nolocké melhor usado para
     selecionar tabelas grandes com muitas atualizações e você não se importa se o registro obtido pode estar
     desatualizado.
 
-    Os registros financeiros (e quase todos os outros registros na maioria dos aplicativos) nolockcausariam estragos,
+    Os registros financeiros (e quase todos os outros registros na maioria dos aplicativos) nolock causariam estragos,
     pois você poderia ler os dados de um registro que estava sendo gravado e não obter os dados corretos.
 
 
@@ -62,13 +41,18 @@ class General {
     Se eu não coloco o inner apenas join ele faz o inner join.
 
     --inner join traz o que tiver repetido nas duas tabelas
+
     --left join traz tudo da tabela da esquerda mais o que for igual no da direita
     left outer join
+
     --right join traz tudo tabela da direita e o repetido da esquerda
     right outer join
+
     --full outer join traz tudo de todas as tabelas
     full join
+
     semi join seria um inner join mais ele só pega dados da tabela left
+
     anti join
     o que vem da tabela left mais não o que vem do inner join que tem a esquerda.
 
