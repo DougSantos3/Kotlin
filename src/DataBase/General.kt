@@ -6,12 +6,8 @@ class General {
        query  == query
 
     Nolock: é para não ficar locado em fila, a proxima consulta não fica esperando ela ser feita para ser executada, ela
-    uso esse nolock e enquanto executa a minha eu deixo liberado para que você faça a sua também, você não precisa
-    esperar a minha terminar.
-
-    O que se pretende com a consulta, o SGBD em questão e tipo de leitura que você pretende.
-
-    Vamos definir dois conceitos antes:
+    uso esse nolock e enquanto executa a minha eu deixo liberado para que você faça, você não precisa esperar a minha
+    terminar.
 
     Leitura não confirmada ou suja "dirty read": ler dados de uma tabela que não foram confirmados por meio de commit.
     Ou seja, dados que estão temporariamente ali e podem sumir.
@@ -29,9 +25,8 @@ class General {
     Em resumo: Se o seu SGBD permitir, utilize NOLOCK quando deseja visualizar dados não confirmados e não quando
     deseja trabalhar somente com os dados que estão confirmados de fato.
 
-    Se você estiver lidando com transações financeiras, nunca desejará usá-lo nolock. nolocké melhor usado para
-    selecionar tabelas grandes com muitas atualizações e você não se importa se o registro obtido pode estar
-    desatualizado.
+    Se você estiver lidando com transações financeiras, nunca desejará usá-lo nolock. É melhor usado para selecionar
+    tabelas grandes com muitas atualizações e você não se importa se o registro obtido pode estar desatualizado.
 
     Os registros financeiros (e quase todos os outros registros na maioria dos aplicativos) nolock causariam estragos,
     pois você poderia ler os dados de um registro que estava sendo gravado e não obter os dados corretos.
