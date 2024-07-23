@@ -32,7 +32,6 @@ class General {
     pois você poderia ler os dados de um registro que estava sendo gravado e não obter os dados corretos.
 
 
-
     Se eu não coloco o inner apenas join ele faz o inner join.
 
     --inner join traz o que tiver repetido nas duas tabelas
@@ -51,7 +50,7 @@ class General {
     anti join
     o que vem da tabela left mais não o que vem do inner join que tem a esquerda.
 
-    """
+
     SELECT
     o.*
     FROM
@@ -59,7 +58,7 @@ class General {
     INNER JOIN offer_manager.offer o ON l.idt_customer = o.idt_customer
     WHERE l.des_product_type = "LOAN"
     AND l.num_score >= 1080 AND l.des_rating = 'A' AND o.flg_active AND NOT o.flg_whitelist
-    """
+
 
     o.* é o apelido da tabela offer que eu dei na query. Igual o limit tem o apelido l , a offer tem um. Talvez tenha
     ficado estranho porque o FROM é na limit, mas a offer está no join então ela também é pesquisável
