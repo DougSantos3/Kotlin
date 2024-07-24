@@ -51,11 +51,9 @@ class General {
     o que vem da tabela left mais não o que vem do inner join que tem a esquerda.
 
 
-    SELECT
-    o.*
-    FROM
-    offer_manager."Limit" l
-    INNER JOIN offer_manager.offer o ON l.idt_customer = o.idt_customer
+    SELECT o.*
+    FROM customer."Limit" l
+    left JOIN customer.offer o ON l.idt_customer = o.idt_customer
     WHERE l.des_product_type = "LOAN"
     AND l.num_score >= 1080 AND l.des_rating = 'A' AND o.flg_active AND NOT o.flg_whitelist
 
