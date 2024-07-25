@@ -58,25 +58,15 @@ class General {
     AND l.num_score >= 1080 AND l.des_rating = 'A' AND o.flg_active AND NOT o.flg_whitelist
 
 
-    o.* é o apelido da tabela offer que eu dei na query. Igual o limit tem o apelido l , a offer tem um. Talvez tenha
-    ficado estranho porque o FROM é na limit, mas a offer está no join então ela também é pesquisável
-
-    select o.* from offer o inner join limit l on l.idt_customer = o.idt_customer
-
-    assim seria equivalente também
+    o.* é o apelido da tabela offer que eu dei na query. Igual o limit tem o apelido l.
 
 
-
-    Proposal tem um forenkey na proposal document.
-
-    Proposal document tem uma forenkey na pendency.
-
-    Se quizer remover uma proposta e ele tem document e pendência, precisa remover as forenkey primeiro, iniciando com a
-    pendency, e proposal document por ultimo a proposal.
+    Se quizer remover uma com relacionamento, precisa remover as forenkey primeiro, iniciando por ela e por ultimo a
+    primary key.
 
 
 
-    Pendency depende de proposal document para existir assim como proposal document para existir depende de proposal.
+    Em um relacionamento um depende do para existir.
 
 
 
