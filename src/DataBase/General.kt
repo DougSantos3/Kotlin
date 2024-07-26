@@ -34,22 +34,29 @@ class General {
 
     Se eu não coloco o inner apenas join ele faz o inner join.
 
-    --inner join traz o que tiver repetido nas duas tabelas
+    Iinner join:
+    Traz o que tiver repetido nas duas tabelas
 
-    --left join traz tudo da tabela da esquerda mais o que for igual no da direita
+    Left join:
+    Traz tudo da tabela da esquerda mais o que for igual no da direita
+
     left outer join
 
-    --right join traz tudo tabela da direita e o repetido da esquerda
+    Right join:
+    Ttraz tudo tabela da direita e o repetido da esquerda
+
     right outer join
 
-    --full outer join traz tudo de todas as tabelas
-    full join
+    Full outer join:
+    Traz tudo de todas as tabelas
 
-    semi join seria um inner join mais ele só pega dados da tabela left
+    Full join:
 
-    anti join
-    o que vem da tabela left mais não o que vem do inner join que tem a esquerda.
+    Semi join:
+    O que tem na esquerda e tem na direita porém não traz os dados da direita.
 
+    Anti join:
+    O que tem na equerda e não tem na direita, inverso do acima.
 
     SELECT o.*
     FROM customer."Limit" l
