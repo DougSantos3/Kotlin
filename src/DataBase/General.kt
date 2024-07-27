@@ -82,55 +82,40 @@ class General {
     1 para 1 - Pendency para proposal document é um para um porque é uma pendência para um documento
 
 
-
     #2(one to much/ much to one)
 
     Muitos para 1(1 para muitos) - Proposal document para proposal é muitos para um que é muitos documentos para uma
     proposta.
 
 
-
     #3(much to much)
-
     muitos para muitos
 
 
-
     #4
-
     o zero para 1
 
 
-
     #5
-
     muitos para 0
-
     Relacionamentos
-
     1 para 1 - Pendency para proposal document é um para um porque é uma pendência para um documento
-
 
 
     Muitos para 1(1 para muitos) - Proposal document para proposal é muitos para um que é muitos documentos para uma
     proposta.
 
 
-
     muitos para muitos
-
 
 
     o zero para 1
 
 
-
     muitos para 0
 
 
-
     entender o desenho da tabela
-
 
 
     Linhas são chamada de registros
