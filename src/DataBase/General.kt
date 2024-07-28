@@ -127,36 +127,20 @@ class General {
 
 
     Colunas são chamadas de campos
-
     Roberto
-
     Monise
-
     Douglas
-
     José Maria
 
 
 
     Conjunto de linhas e colunas são chamadas de tabelas.
+    A estrutura da tabela de banco de dados é chamado de schemas.
+    Estância de uma determinada entidade(customer) == linhas
+    Atributos de cada entidade(customer) = colunas
+    O conjunto de coluna é chamado de relação entidade(customer)
 
 
-
-    A estrutura da tabela de banco de dados é chamado de schemas
-
-
-
-    estância de uma determinada entidade(customer) == linhas
-
-    atributos de cada entidade(customer) = colunas
-
-    o conjunto de coluna é chamado de relação
-
-    entidade(customer)
-
-
-
-    33 - Banco de Dados
 
     Backfill seria forçar o cache do função a ir no função e atualizar todo o cache?
     Isso Miranda
@@ -164,19 +148,14 @@ class General {
 
 
     Banco de dados gráficos: Neo4j
-
     Banco de dados de objeto: relm, objectdb
-
     Banco de dados de documento: Mongodb
-
     Banco de dados relacional: mysql, postgrs, sql server, oracle
 
 
 
     Recebe esse nome devido a maneira que organiza os dados em relações ou tabelas de dados relacionados.
-
     Em um banco de dados relacional a tabela são compostas por linhas que representam estâncias de uma determinada
     entidade e colunas que representam atributos de cada entidade.
-
     O conjunto de colunas é chamado de relação*/
 }
