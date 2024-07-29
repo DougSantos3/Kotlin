@@ -67,13 +67,10 @@ class General {
 
     o.* é o apelido da tabela offer que eu dei na query. Igual o limit tem o apelido l.
 
-
     Se quizer remover uma com relacionamento, precisa remover as forenkey primeiro, iniciando por ela e por ultimo a
     primary key.
 
-
-
-    Em um relacionamento um depende do para existir.
+    Em um relacionamento um depende do outro para existir.
 
 
 
