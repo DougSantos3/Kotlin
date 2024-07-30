@@ -1,9 +1,51 @@
 package br.com.vraptor.bitBank.banco
 
 class General {
-    /* sql    == noSql
-       tabela == documento
-       query  == query
+    /*
+    sql    == noSql
+    tabela == documento
+    query  == query
+
+
+
+    Linhas são chamada de registros
+
+    id name lastname phone
+
+    1 Douglas Santos 11958674646
+
+
+
+    Colunas são chamadas de campos
+    Roberto
+    Monise
+    Douglas
+
+
+
+    Conjunto de linhas e colunas são chamadas de tabelas.
+    A estrutura da tabela de banco de dados é chamado de schemas.
+    Estância de uma determinada entidade(customer) == linhas
+    Atributos de cada entidade(customer) = colunas
+    O conjunto de coluna é chamado de relação entidade(customer)
+
+
+
+    Backfill seria forçar o cache do sistema a ir no mesmo e atualizar todo o cache
+
+
+
+    Banco de dados gráficos: Neo4j
+    Banco de dados de objeto: relm, objectdb
+    Banco de dados de documento: Mongodb
+    Banco de dados relacional: mysql, postgrs, sql server, oracle
+
+
+
+    Recebe esse nome devido a maneira que organiza os dados em relações ou tabelas de dados relacionados.
+    Em um banco de dados relacional a tabela são compostas por linhas que representam estâncias de uma determinada
+    entidade e colunas que representam atributos de cada entidade.
+    O conjunto de colunas é chamado de relação
 
     Nolock: é para não ficar locado em fila, a proxima consulta não fica esperando ela ser feita para ser executada, ela
     uso esse nolock e enquanto executa a minha eu deixo liberado para que você faça, você não precisa esperar a minha
@@ -30,6 +72,18 @@ class General {
 
     Os registros financeiros (e quase todos os outros registros na maioria dos aplicativos) nolock causariam estragos,
     pois você poderia ler os dados de um registro que estava sendo gravado e não obter os dados corretos.
+
+    #1(one to one) - 1 para 1
+
+    #2(one to much/ much to one) - Muitos para 1(1 para muitos)
+
+    #3(much to much) - muitos para muitos
+
+    #4(o zero para 1)
+
+    #5(muitos para 0)
+
+    #6(muitos para muitos)
 
 
     Se eu não coloco o inner apenas join ele faz o inner join.
@@ -71,88 +125,4 @@ class General {
     primary key.
 
     Em um relacionamento um depende do outro para existir.
-
-
-
-    #1(one to one)
-
-    1 para 1 - Pendency para proposal document é um para um porque é uma pendência para um documento
-
-
-    #2(one to much/ much to one)
-
-    Muitos para 1(1 para muitos) - Proposal document para proposal é muitos para um que é muitos documentos para uma
-    proposta.
-
-
-    #3(much to much)
-    muitos para muitos
-
-
-    #4
-    o zero para 1
-
-
-    #5
-    muitos para 0
-    Relacionamentos
-    1 para 1 - Pendency para proposal document é um para um porque é uma pendência para um documento
-
-
-    Muitos para 1(1 para muitos) - Proposal document para proposal é muitos para um que é muitos documentos para uma
-    proposta.
-
-
-    muitos para muitos
-
-
-    o zero para 1
-
-
-    muitos para 0
-
-
-    entender o desenho da tabela
-
-
-    Linhas são chamada de registros
-
-    id name lastname phone
-
-    1 Douglas Santos 11977654654
-
-
-
-    Colunas são chamadas de campos
-    Roberto
-    Monise
-    Douglas
-    José Maria
-
-
-
-    Conjunto de linhas e colunas são chamadas de tabelas.
-    A estrutura da tabela de banco de dados é chamado de schemas.
-    Estância de uma determinada entidade(customer) == linhas
-    Atributos de cada entidade(customer) = colunas
-    O conjunto de coluna é chamado de relação entidade(customer)
-
-
-
-    Backfill seria forçar o cache do função a ir no função e atualizar todo o cache?
-    Isso Miranda
-
-
-
-    Banco de dados gráficos: Neo4j
-    Banco de dados de objeto: relm, objectdb
-    Banco de dados de documento: Mongodb
-    Banco de dados relacional: mysql, postgrs, sql server, oracle
-
-
-
-    Recebe esse nome devido a maneira que organiza os dados em relações ou tabelas de dados relacionados.
-    Em um banco de dados relacional a tabela são compostas por linhas que representam estâncias de uma determinada
-    entidade e colunas que representam atributos de cada entidade.
-    O conjunto de colunas é chamado de relação*/
-}
+}*/
