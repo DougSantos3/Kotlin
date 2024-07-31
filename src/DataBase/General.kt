@@ -11,16 +11,12 @@ class General {
     Linhas são chamada de registros
 
     id name lastname phone
-
     1 Douglas Santos 11958674646
-
-
 
     Colunas são chamadas de campos
     Roberto
     Monise
     Douglas
-
 
 
     Conjunto de linhas e colunas são chamadas de tabelas.
