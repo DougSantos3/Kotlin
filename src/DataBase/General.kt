@@ -41,13 +41,15 @@ class General {
     Banco de dados relacional: mysql, postgrs, sql server, oracle
 
 
-
+    BANCO RELACIONAL
     Recebe esse nome devido a maneira que organiza os dados em relações ou tabelas de dados relacionados.
     Em um banco de dados relacional a tabela são compostas por linhas que representam estâncias de uma determinada
     entidade e colunas que representam atributos de cada entidade.
     O conjunto de colunas é chamado de relação
 
-    Nolock: é para não ficar locado em fila, a proxima consulta não fica esperando ela ser feita para ser executada, ela
+
+    NOLOCK:
+    É para não ficar locado em fila, a proxima consulta não fica esperando ela ser feita para ser executada, ela
     uso esse nolock e enquanto executa a minha eu deixo liberado para que você faça, você não precisa esperar a minha
     terminar.
 
@@ -73,6 +75,10 @@ class General {
     Os registros financeiros (e quase todos os outros registros na maioria dos aplicativos) nolock causariam estragos,
     pois você poderia ler os dados de um registro que estava sendo gravado e não obter os dados corretos.
 
+
+
+
+    RELACIONAMENTO
     #1(one to one) - 1 para 1
 
     #2(one to much/ much to one) - Muitos para 1(1 para muitos)
@@ -85,7 +91,15 @@ class General {
 
     #6(muitos para muitos)
 
+    Se quizer remover uma com relacionamento, precisa remover as forenkey primeiro, iniciando por ela e por ultimo a
+    primary key.
 
+    Em um relacionamento um depende do outro para existir.
+
+
+
+
+    JOIN
     Se eu não coloco o inner apenas join ele faz o inner join.
 
     Iinner join:
@@ -118,11 +132,5 @@ class General {
     WHERE l.des_product_type = "LOAN"
     AND l.num_score >= 1080 AND l.des_rating = 'A' AND o.flg_active AND NOT o.flg_whitelist
 
-
     o.* é o apelido da tabela offer que eu dei na query. Igual o limit tem o apelido l.
-
-    Se quizer remover uma com relacionamento, precisa remover as forenkey primeiro, iniciando por ela e por ultimo a
-    primary key.
-
-    Em um relacionamento um depende do outro para existir.
 }*/
