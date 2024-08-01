@@ -18,7 +18,6 @@ class General {
     Monise
     Douglas
 
-
     Conjunto de linhas e colunas são chamadas de tabelas.
     A estrutura da tabela de banco de dados é chamado de schemas.
     Estância de uma determinada entidade(customer) == linhas
@@ -70,8 +69,6 @@ class General {
 
     Os registros financeiros (e quase todos os outros registros na maioria dos aplicativos) nolock causariam estragos,
     pois você poderia ler os dados de um registro que estava sendo gravado e não obter os dados corretos.
-
-
 
 
     RELACIONAMENTO
