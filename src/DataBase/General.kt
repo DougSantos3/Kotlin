@@ -35,12 +35,11 @@ class General {
     Banco de dados de documento: Mongodb
     Banco de dados relacional: mysql, postgrs, sql server, oracle
 
-
     BANCO RELACIONAL
     Recebe esse nome devido a maneira que organiza os dados em relações ou tabelas de dados relacionados.
     Em um banco de dados relacional a tabela são compostas por linhas que representam estâncias de uma determinada
     entidade e colunas que representam atributos de cada entidade.
-    O conjunto de colunas é chamado de relação
+    O conjunto de colunas é chamado de relação.
 
 
     NOLOCK:
