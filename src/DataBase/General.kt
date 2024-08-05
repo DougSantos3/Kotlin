@@ -73,15 +73,13 @@ class General {
     RELACIONAMENTO
     #1(one to one) - 1 para 1
 
-    #2(one to much/ much to one) - Muitos para 1(1 para muitos)
+    #2(one to much/ much to one) - 1 para muitos/Muitos para 1
 
     #3(much to much) - muitos para muitos
 
     #4(o zero para 1)
 
     #5(muitos para 0)
-
-    #6(muitos para muitos)
 
     Se quizer remover uma com relacionamento, precisa remover as forenkey primeiro, iniciando por ela e por ultimo a
     primary key.
