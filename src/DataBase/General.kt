@@ -81,7 +81,7 @@ class General {
 
     #5(muitos para 0)
 
-    Se quizer remover uma com relacionamento, precisa remover as forenkey primeiro, iniciando por ela e por ultimo a
+    Se quizer remover um com relacionamento, precisa remover as forenkey primeiro, iniciando por ela e por ultimo a
     primary key.
 
     Em um relacionamento um depende do outro para existir.
