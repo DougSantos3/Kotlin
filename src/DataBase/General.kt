@@ -101,7 +101,7 @@ class General {
     left outer join
 
     Right join:
-    Ttraz tudo tabela da direita e o repetido da esquerda
+    Traz tudo tabela da direita e o repetido da esquerda
 
     right outer join
 
