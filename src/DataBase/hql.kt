@@ -2,9 +2,7 @@ package br.com.vraptor.bitBank.banco
 
 class Hql {
     /*
-    O que seria:
-
-    @‌sqldelete(sql = "UPDATE merchant_psp_agreement SET deleted = true WHERE country_id=? AND merchant_id=? AND psp_id=?")
+    sqldelete(sql = "UPDATE merchant_psp_agreement SET deleted = true WHERE country_id=? AND merchant_id=? AND psp_id=?")
 
     Essa parece ser uma anotação personalizada em uma classe Java, e seu propósito é fornecer uma instrução SQL
     personalizada para uma operação de exclusão em um banco de dados. Aqui está uma análise detalhada:
@@ -22,6 +20,5 @@ class Hql {
     Em resumo, esta anotação personalizada @sqldelete está sendo usada para definir uma operação de exclusão
     personalizada em uma classe Java, onde a instrução SQL específica é fornecida pelo desenvolvedor. Isso oferece
     flexibilidade para executar operações de banco de dados mais complexas e específicas que não podem ser atendidas
-    diretamente pelas operações de exclusão padrão do framework ou da API que está sendo utilizada.
-    */
+    diretamente pelas operações de exclusão padrão do framework ou da API que está sendo utilizada. */
 }
