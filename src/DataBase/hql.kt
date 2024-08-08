@@ -1,8 +1,8 @@
 package br.com.vraptor.bitBank.banco
 
 class Hql {
-    /*
-    sqldelete(sql = "UPDATE merchant_psp_agreement SET deleted = true WHERE country_id=? AND merchant_id=? AND psp_id=?")
+    /* sqldelete
+         (sql = "UPDATE merchant_psp_agreement SET deleted = true WHERE country_id=? AND merchant_id=? AND psp_id=?")
 
     Essa parece ser uma anotação personalizada em uma classe Java, e seu propósito é fornecer uma instrução SQL
     personalizada para uma operação de exclusão em um banco de dados. Aqui está uma análise detalhada:
@@ -11,7 +11,7 @@ class Hql {
     em alguma biblioteca/framework específica. Ela indica que a operação seguinte é uma operação de exclusão e que a
     instrução SQL a ser executada será especificada manualmente.
 
-    (sql = "UPDATE merchant_psp_agreement SET deleted = true WHERE country_id=? AND merchant_id=? AND psp_id=?"):
+    (sql = "UPDATE merchant_psp_agreement SET deleted = true WHERE country_id=? AND merchant_id=? AND psp_id=?")
     Esta parte da anotação especifica a instrução SQL a ser executada para a exclusão. Neste caso, é um comando SQL de
     atualização (UPDATE) que define o valor do campo deleted como verdadeiro (true) na tabela merchant_psp_agreement.
     A cláusula WHERE é usada para especificar as condições que determinam quais registros serão atualizados.
