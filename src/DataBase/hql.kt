@@ -17,6 +17,7 @@ class Hql {
     A cláusula WHERE é usada para especificar as condições que determinam quais registros serão atualizados.
     Os placeholders ? serão substituídos pelos valores reais durante a execução da consulta.
 
+
     Em resumo, esta anotação personalizada @sqldelete está sendo usada para definir uma operação de exclusão
     personalizada em uma classe Java, onde a instrução SQL específica é fornecida pelo desenvolvedor. Isso oferece
     flexibilidade para executar operações de banco de dados mais complexas e específicas que não podem ser atendidas
