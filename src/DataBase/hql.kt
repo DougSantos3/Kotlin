@@ -7,9 +7,9 @@ class Hql {
     Essa parece ser uma anotação personalizada em uma classe Java, e seu propósito é fornecer uma instrução SQL
     personalizada para uma operação de exclusão em um banco de dados. Aqui está uma análise detalhada:
 
-    @sqldelete: Esta é uma anotação personalizada, que provavelmente foi definida pelo desenvolvedor ou está disponível
-    em alguma biblioteca/framework específica. Ela indica que a operação seguinte é uma operação de exclusão e que a
-    instrução SQL a ser executada será especificada manualmente.
+    @sqldelete: Ela que provavelmente foi definida pelo desenvolvedor ou está disponível em alguma biblioteca/framework
+    específica. Ela indica que a operação seguinte é uma de exclusão e que a instrução SQL a ser executada será
+    especificada manualmente.
 
     (sql = "UPDATE customer SET deleted = true WHERE world=? AND client=? AND gateway=?")
     Esta parte da anotação especifica a instrução SQL a ser executada para a exclusão. Neste caso, é um comando SQL de
