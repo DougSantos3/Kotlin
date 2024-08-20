@@ -2,10 +2,6 @@ package br.com.vraptor.bitBank.banco
 
 class Mongo {
     /*
-    * Mongodb
-
-
-
     sql == nosql
 
     Tabela == coleções(collection)
@@ -20,9 +16,7 @@ class Mongo {
 
     1 registro == documento
 
-
-
-    buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela ide mongo compass
+    buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
 
 
 
