@@ -3,7 +3,7 @@ package br.com.vraptor.bitBank.banco
 class Mongo {
     /* sql == nosql
 
-       Tabela == coleções(collection)
+       Tabela == Coleções(collection)
 
        select == find
 
@@ -25,10 +25,6 @@ class Mongo {
     O MongoDB fornece um método de criação de coleções pela linha de comando. Vamos acessar o navegador e buscar por
     esse método, o "mongodb create collection". Em seguida, podemos abrir a documentação: db.createCollection()
     — MongoDB Manual.
-
-    A documentação do MongoDB está escrita em inglês, mas, caso você não domine o idioma, pode usar o tradutor do
-    *  próprio navegador. Essa opção fica na parte superior da tela . Se ela não aparecer automaticamente, basta apertar
-     com o botão direito do mouse e selecionar "Traduzir para o português".
 
     O db.createCollection() é o método que utilizaremos na criação de coleções, informando o nome dessa coleção. Também
     *  temos a opção de passar algumas configurações, mas, no nosso caso, não será necessário. Vamos apenas criar a
