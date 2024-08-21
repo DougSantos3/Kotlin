@@ -1,33 +1,34 @@
 package br.com.vraptor.bitBank.banco
 
 class Mongo {
-    /*
-    sql == nosql
+    /* sql == nosql
 
-    Tabela == coleções(collection)
+       Tabela == coleções(collection)
 
-    select == find
+       select == find
 
-    insert into ==  insertOne
+       insert into ==  insertOne
 
-    update == updateOne
+       update == updateOne
 
-    delete == deleteOne
+       delete == deleteOne
 
-    1 registro == documento
+       1 registro == documento
 
-    buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
+       buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
 
 
 
     Para que um banco de dados seja de fato criado no MongoDB, ele precisa conter dados/coleções. As coleções são
-    * análogas às tabelas em bancos de dados relacionais. Então, vamos inserir uma coleção no MongoDB Compass.
+    análogas às tabelas em bancos de dados relacionais. Então, vamos inserir uma coleção no MongoDB Compass.
 
     O MongoDB fornece um método de criação de coleções pela linha de comando. Vamos acessar o navegador e buscar por
-    * esse método, o "mongodb create collection". Em seguida, podemos abrir a documentação: db.createCollection() — MongoDB Manual.
+    esse método, o "mongodb create collection". Em seguida, podemos abrir a documentação: db.createCollection()
+    — MongoDB Manual.
 
     A documentação do MongoDB está escrita em inglês, mas, caso você não domine o idioma, pode usar o tradutor do
-    *  próprio navegador. Essa opção fica na parte superior da tela . Se ela não aparecer automaticamente, basta apertar com o botão direito do mouse e selecionar "Traduzir para o português".
+    *  próprio navegador. Essa opção fica na parte superior da tela . Se ela não aparecer automaticamente, basta apertar
+     com o botão direito do mouse e selecionar "Traduzir para o português".
 
     O db.createCollection() é o método que utilizaremos na criação de coleções, informando o nome dessa coleção. Também
     *  temos a opção de passar algumas configurações, mas, no nosso caso, não será necessário. Vamos apenas criar a
