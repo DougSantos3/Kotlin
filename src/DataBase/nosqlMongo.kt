@@ -27,26 +27,26 @@ class Mongo {
     — MongoDB Manual.
 
     O db.createCollection() é o método que utilizaremos na criação de coleções, informando o nome dessa coleção. Também
-    *  temos a opção de passar algumas configurações, mas, no nosso caso, não será necessário. Vamos apenas criar a
-    * coleção com o nome e deixar que o MongoDB configure por padrão. Mais abaixo, temos um exemplo de como criar a
-    * coleção, fazendo db.createCollection() e passando o nome nos parênteses.
+    temos a opção de passar algumas configurações, mas, no nosso caso, não será necessário. Vamos apenas criar a
+    coleção com o nome e deixar que o MongoDB configure por padrão. Mais abaixo, temos um exemplo de como criar a
+    coleção, fazendo db.createCollection() e passando o nome nos parênteses.
 
     Vamos voltar para a linha de comando e informar o método db.createCollection("series"). Nos parênteses, passaremos
-    * o nome da coleção que é "series". Vamos apertar "Enter" e, automaticamente, a nossa coleção será criada. Ela tem,
-    * como retorno, apenas { ok: 1 }, para sinalizar que o comando foi executado corretamente.
+    o nome da coleção que é "series". Vamos apertar "Enter" e, automaticamente, a nossa coleção será criada. Ela tem,
+    como retorno, apenas { ok: 1 }, para sinalizar que o comando foi executado corretamente.
 
     Agora, vamos voltar ao MongoDB Compass e verificar se o nosso banco de dados aparecerá. No topo do menu lateral, à
-    * esquerda da tela, encontramos algumas informações: a quantidade de bancos de dados criados; o número de coleções;
-    * e o botão de "atualizar". Vamos pressionar esse botão e, com a atualização da página, visualizaremos o nosso
-    * banco de dados, "Alura_Serie" e a nossa coleção, "series".
+    esquerda da tela, encontramos algumas informações: a quantidade de bancos de dados criados; o número de coleções;
+    e o botão de "atualizar". Vamos pressionar esse botão e, com a atualização da página, visualizaremos o nosso
+    banco de dados, "Serie" e a nossa coleção, "series".
 
     Também podemos criar, tanto o banco de dados, quanto coleções. Por exemplo, nós temos uma coleção criada no
-    * "Alura_Serie", mas também podemos criar outras coleções em bancos de dados que já existem.
+    "Serie", mas também podemos criar outras coleções em bancos de dados que já existem.
 
     Vamos dar um clique em cima do banco de dados "series", todas as coleções existentes estão disponíveis.
-    * Agora podemos apertar o botão "Create collection". Feito isso, aparecerá uma janela, onde informaremos o nome da
-    * coleção que desejamos criar. Então, preencheremos o campo "Collection Name" com "series_02" e apertaremos
-    *  "Create Collection". Pronto! Temos mais uma coleção criada.
+    Agora podemos apertar o botão "Create collection". Feito isso, aparecerá uma janela, onde informaremos o nome da
+    coleção que desejamos criar. Então, preencheremos o campo "Collection Name" com "series_02" e apertaremos
+    "Create Collection". Pronto! Temos mais uma coleção criada.
 
     Para criar um banco de dados no MongoDB Compass, também no menu lateral, à esquerda, selecionaremos a opção
     * "Databases". Depois, no canto esquerdo da área central da tela, apertaremos o botão "Create database". Uma nova
