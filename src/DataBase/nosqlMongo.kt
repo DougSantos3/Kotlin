@@ -18,9 +18,9 @@ class Mongo {
        buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
 
 
-    Studio3t e MongoDB Compass
 
 
+    Studio3t ou MongoDB Compass
 
     inserir
 
