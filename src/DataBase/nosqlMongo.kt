@@ -20,8 +20,7 @@ class Mongo {
 
 
 
-
-    Studio3t ou MongoDB Compass
+                                           Studio3t ou MongoDB Compass
 
     inserir
 
