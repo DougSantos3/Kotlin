@@ -1,21 +1,22 @@
 package br.com.vraptor.bitBank.banco
 
 class Mongo {
-    /* sql == nosql
+    /*
+    sql == nosql
 
-       Tabela == Coleções(collection)
+    Tabela == Coleções(collection)
 
-       select == find
+    select == find
 
-       insert into ==  insertOne
+    insert into ==  insertOne
 
-       update == updateOne
+    update == updateOne
 
-       delete == deleteOne
+    delete == deleteOne
 
-       1 registro == documento
+    1 registro == documento
 
-       buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
+    buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
 
 
 
@@ -35,7 +36,7 @@ class Mongo {
 
 
 
-    Após executarmos o comando use Alura_Series para nos conectarmos ao banco de dados, podemos inserir nosso primeiro
+    Após executarmos o comando use para nos conectarmos ao banco de dados, podemos inserir nosso primeiro
     documento pela linha de comando. Para isso, usaremos o método insertOne.
 
     db.series.insertOne({
@@ -220,5 +221,5 @@ class Mongo {
 
     Se passarmos o deleteMany() vazio, removeremos todos os documentos da coleção
 
-    db.series.deleteMany({})*/
+    db.series.deleteMany({}) */
 }
