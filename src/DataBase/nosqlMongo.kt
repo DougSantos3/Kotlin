@@ -68,9 +68,6 @@ class Mongo {
         }])
 
 
-
-
-
     É possivel inserir dados pelo documento json ou csv importando também.
 
 
@@ -89,7 +86,7 @@ class Mongo {
 
 
 
-    Find com operadores realcionais
+    Find com operadores relacionais
 
 
 
