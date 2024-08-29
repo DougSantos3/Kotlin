@@ -111,11 +111,11 @@ class Mongo {
     Sort {"Série": 1}
 
 
-
     db.users.find(                          ← collection
        { age: { $gt: 18  } },               ← query criteria
          { name: 1, address: 1 }            ← projection
     ).limit(5)                              ← cursor modifier
+
 
     db.series.find()
 
@@ -155,16 +155,13 @@ class Mongo {
     )
 
 
-
-
-
     db.series.find({"Série": "Grimm"})
 
 
 
-    test> use Alura_Series
-    switched to db Alura_Series
-    Alura_Series> db.series.find({"Série": "Grimm"})
+    test use Series
+    switched to db Series
+    series> db.series.find({"Série": "Grimm"})
     [
      {
       _id: ObjectId("62f19a1daf663aad19e5e751"),
@@ -182,9 +179,9 @@ class Mongo {
 
     db.series.updateOne({"Série": "Grimm"},{$set: {"Classificação": "16+"}})
 
-    test> use Alura_Series
-    switched to db Alura_Series
-    Alura_Series> db.series.find({"Série": "Grimm"})
+    test> use Series
+    switched to db Series
+    Series> db.series.find({"Série": "Grimm"})
     [
      {
       _id: ObjectId("62f19a1daf663aad19e5e751"),
@@ -209,7 +206,7 @@ class Mongo {
        { status: "reject" }  ← delete filter
     )
 
-    Alura_Series> db.series.find({"Série": "The Boys"})
+    Series> db.series.find({"Série": "The Boys"})
 
     db.series.deleteOne({"Série": "The Boys"})
 
