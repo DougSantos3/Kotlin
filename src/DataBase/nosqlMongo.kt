@@ -16,13 +16,22 @@ class Mongo {
 
     1 registro == documento
 
-    buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
+
+
+    Buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
+
+
 
 
 
                                            Studio3t ou MongoDB Compass
 
-    inserir
+
+
+
+
+
+                                                                Inserir
 
     db.users.insertOne(                  ← collection
        {
@@ -47,12 +56,12 @@ class Mongo {
 
 
 
-    Além do insertOne, podemos usar o insertMany na inserção de mais de um documento por vez.
+                             Além do insertOne, podemos usar o insertMany na inserção de mais de um documento por vez.
 
 
 
     db.series.insertMany([
-    {        "Série": "Made in Heaven",
+    {       "Série": "Made in Heaven",
             "Temporadas disponíveis": 1,
             "Linguagem": "Hindi",
             "Genero": ["Drama"],
@@ -66,6 +75,7 @@ class Mongo {
             "IMDb Avaliação": 7.5,
             "Classificação": "16+"
         }])
+
 
 
     É possivel inserir dados pelo documento json ou csv importando também.
@@ -86,7 +96,7 @@ class Mongo {
 
 
 
-    Find com operadores relacionais
+                                                       Find com operadores relacionais
 
 
 
@@ -147,7 +157,8 @@ class Mongo {
 
 
 
-    Atualizando
+
+                                                              Atualizando
 
     db.users.updateMany(                 ← collection
       { age:  { $lt: 18 } },             ← update filter
@@ -159,7 +170,7 @@ class Mongo {
 
 
 
-    test use Series
+    use Series
     switched to db Series
     series> db.series.find({"Série": "Grimm"})
     [
@@ -179,7 +190,7 @@ class Mongo {
 
     db.series.updateOne({"Série": "Grimm"},{$set: {"Classificação": "16+"}})
 
-    test> use Series
+    use Series
     switched to db Series
     Series> db.series.find({"Série": "Grimm"})
     [
@@ -200,7 +211,9 @@ class Mongo {
 
 
 
-    Removendo dados
+
+
+                                                        Removendo dados
 
     db.users.deleteMany(     ← collection
        { status: "reject" }  ← delete filter
@@ -211,6 +224,8 @@ class Mongo {
     db.series.deleteOne({"Série": "The Boys"})
 
     db.series.deleteMany({"Temporadas disponíveis": 1})
+
+
 
     Se passarmos o deleteMany() vazio, removeremos todos os documentos da coleção
 
