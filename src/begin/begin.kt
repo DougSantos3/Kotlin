@@ -3,17 +3,14 @@ package br.com.vraptor.bitBank.begin
 class Begin {
 
     /*
+    var ou val significa que vai ser criada uma nova variável e sem ele, significa que está usando os atributos de outro
+    e não está criando.
 
-    var ou val significa que vai ser criada uma nova variável e sem ele significa que está usando os atributos de outro e não está criando.
 
-
-
-    Herança para ser usada ou herdarda precisa estar open. Plano.
-
-    Vimos também que para tornar uma classe herdável é preciso marcá-la com a palavra-chave open porque, por padrão,
+    Heranças
+    Vimos também que para tornar uma classe herdável é preciso marcá-la com a palavra-chave open porque por padrão,
     todas as classes criadas no Kotlin são automaticamente final, não podendo assim ser herdadas. A marcação final nas
     classes fica implícita e não precisa ser escrita. Porém, você pode fazer um teste:
-
     Para sobrescrever o metodo precisa inserir o open nele
 
 
