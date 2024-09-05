@@ -24,26 +24,16 @@ class Begin {
 
 
     Tipos primitivos
-
     Long 64-92233720368547758089223372036854775807
-
     Int 32-21474836482147483647
-
     Short 16-3276832767
-
     Byte 8-128127
-
     Double 6416-17 significant digits (same as float in Python)
-
     Float326-7 significant digits
-
     Char16UTF-16 code unit (see the section on strings - in most cases, this is one Unicode character,
     but it might be just one half of a Unicode character)
-
-    Boolean8true or false
-
+    Boolean true or false
     string
-
 
 
     Tipos primitivos quando um é atribuido a outro ele passa uma cópia e não a referencia
