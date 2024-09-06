@@ -2,9 +2,8 @@ package br.com.vraptor.bitBank.begin
 
 class Begin {
 
-    /*
-    var ou val significa que vai ser criada uma nova variável e sem ele, significa que está usando os atributos de outro
-    e não está criando.
+    /* var ou val significa que vai ser criada uma nova variável e sem ele, significa que está usando os atributos de
+    outro e não está criando.
 
 
     Heranças
@@ -20,7 +19,6 @@ class Begin {
     aceitar essa herança.
 
     Data class ele automaticamente tem o método toString que imprime os atributos da classe.
-
 
 
     Tipos primitivos
@@ -39,46 +37,28 @@ class Begin {
     Tipos primitivos quando um é atribuido a outro ele passa uma cópia e não a referencia
 
     val numeroX = 10
-
     val numeroY = numeroX
-
     numeroY++
 
-
-
     println(numeroX)  // 10
-
     println(numeroY)  // 11
-
-
 
     //agora passar por referência
 
-
-
     val contaJoao = Conta()
-
     contaJoao.titular = “João“
-
     var contaMaria = contaJoao
-
     contaMaria.titular = “Maria“
 
-
-
     println(“Titular conta Joao: ${contaJoao.titular}“)
-
     println(“Titular conta Maria: ${contaMaria.titular}“)
 
     //Ambos imprimem  Maria
-
     //ele aponta para o mesmo primeiro foi escrito Joao depois mudou para Maria
 
-
-
-    acima sempre é uma estancia se vocÊ realmente quizer um novo objeto precisar estanciar
+    acima sempre é uma estancia se você realmente quizer um novo objeto precisar estanciar
 
     val contaJoao = Conta()
 
-    val contaMaria = Conta()*/
+    val contaMaria = Conta() */
 }
