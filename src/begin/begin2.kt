@@ -1,22 +1,16 @@
 package br.com.vraptor.bitBank.begin
 
 class Begin2 {
-    /*Row string literal: “““   “““
-
-    ele pula  a linha realmente e ajuda na visualização
-
+    /* Row string literal:
+    “““
+      ele pula  a linha realmente e ajuda na visualização
     “““
 
     logradouro,
-
     numero,
-
     cep,
-
     cidade “““.trimIdent()
-
     trimIdent remove as linhas em brancos
-
 
     equals(): deve devolver true quando for o mesmo objeto e false caso sejam diferentes;
 
@@ -25,32 +19,22 @@ class Begin2 {
 
     hashCode(): deve apresentar o código de cada objeto(formato inteiro) com valores diferentes.
 
-
-
-    ' c' // um caracter(um char)
-
+    'c' // um caracter(um char)
     “c“ //um texto
 
     chains(chamada encadeada de safe call): val logradouroNovo: String? = enderecoNulo?.logradouro?
 
-
-
-    let é função mais enxuta sem precisar colocar o if e ela só será executada quando for non-null. Safe call que pode
-    ser combinado com o let.
+    let é função mais enxuta sem precisar colocar o if e ela só será executada quando for non-null(não nula, quando ela
+    existir). Safe call que pode ser combinado com o let.
 
     enderecoNulo?let {it: Endereco
-
     println(it.logradouro.length)
 
-
-    late init
-
-
-
+    lateinit
     Na variável, utilizaremos o recurso lateinit para só instanciar o nosso recurso, que vai estar guardado na nossa
     variável, quando, de fato, for utilizar esse recurso.
 
-    O que isso quer dizer? Não vou inicializar já o meu recurso agora, na hora que declarar na variável. ele só será
+    O que isso quer dizer? Não vou inicializar já o meu recurso agora, na hora que declarar na variável, ele só será
     inicializado quando for chamado nos testes.
 
     @Autowired
@@ -62,17 +46,12 @@ class Begin2 {
     }
 
 
-    Sobre carga de metodo
-
-
+    Sobrecarga de metodo
 
     somar(valor)
-
     somar(valor<list>)
-
     somar(valor, valor2<arrayList>)
 
 
-    Inserindo ssl no site você coloca o certficado de segurança no seu site, mudando de http para https.
-    */
+    Inserindo ssl no site você coloca o certficado de segurança no seu site, mudando de http para https. */
 }
