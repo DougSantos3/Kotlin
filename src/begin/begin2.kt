@@ -12,15 +12,15 @@ class Begin2 {
     cidade “““.trimIdent()
     trimIdent remove as linhas em brancos
 
-    equals(): deve devolver true quando for o mesmo objeto e false caso sejam diferentes;
+    equals(): deve devolver true quando for o mesmo objeto e false caso sejam diferentes.
 
     toString(): deve apresentar o nome da classe e o código do objeto(formato hexadecimal) diferentes para cada objeto
-    br.com.vrapor.bitbank que seria a classe @ EnderecoAfdsd698797d
+    br.com.vrapor.bitbank  @EnderecoAfdsd698797d
 
     hashCode(): deve apresentar o código de cada objeto(formato inteiro) com valores diferentes.
 
-    'c' // um caracter(um char)
-    “c“ //um texto
+    'c'  um caracter(um char)
+    “c“  um texto
 
     chains(chamada encadeada de safe call): val logradouroNovo: String? = enderecoNulo?.logradouro?
 
