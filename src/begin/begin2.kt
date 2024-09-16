@@ -43,7 +43,6 @@ class Begin2 {
 
     Quando utilizamos o lateinit não precisamos passar uma instância para ele já inicializar esse nosso repository,
     porque vamos fazer isso no momento posterior.
-    }
 
 
     Sobrecarga de metodo
