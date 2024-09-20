@@ -26,6 +26,6 @@ public class Csrf {
 
     Além disso, o Spring Security permite a proteção contra falsificação de solicitação entre sites (CSRF) por padrão.
     CSRF é um ataque que engana a vítima para que envie uma solicitação maliciosa e usa a identidade da vítima para
-    executar uma função indesejada em seu nome. Se o token CSRF, usado para proteção contra esse tipo de ataque, estiver
-    ausente ou incorreto, o servidor também poderá responder com o erro 403. */
+    executar uma função indesejada em seu nome. Se o token CSRF, usado para proteção contra esse tipo de ataque,
+    estiver ausente ou incorreto, o servidor também poderá responder com o erro 403. */
 }
