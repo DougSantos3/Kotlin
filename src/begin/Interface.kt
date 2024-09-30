@@ -2,39 +2,32 @@ package br.com.vraptor.bitBank.begin
 
 interface interface1 {
 
-    /* que recebe uma senha do tipo Int e devolve um Boolean.
+    // Recebe uma senha do tipo Int e devolve um Boolean.
     fun autentica(senha: Int) : Boolean
 
-    Interface não tem o constructor () depois do nome dele, só teria se fosse classe abstrata.
+    /* Interface não tem o constructor () depois do nome dele, só teria se fosse classe abstrata.
 
-    Interface ela pode ter seus membros abstratos ou seja os filhos que vão
-    implementar que vão ter fazer isso sendo que a interface
-    é só um contrato e não estância, mais a propria interface pode implementar os metodos inclusive criar um
-    atributo ou property porém como ela não guarda estado então apenas ficara assim
-    val senha: Int e não pode ser assim val senha: Int = 7 . Importante avisar que o atributo na interface
-    sempre será public e senha não pode ser publico
+    Interface ela pode ter seus membros abstratos(metodos e atributos) ou seja os filhos que vão implementar, sendo que
+    a interface é só um contrato e não estância, mais a propria interface pode implementar os metodos inclusive criar
+    um atributo ou property porém como ela não guarda estado então apenas ficara assim val senha: Int e não pode ser
+    assim val senha: Int = 7 . Importante avisar que o atributo na interface sempre será public e senha não pode ser
+    publico.
 
-    Veja que a classe modelo.Diretor/modelo.Gerente que herda o modelo.FuncionarioAdmin que implementa o metodo
+    Veja que a classe modelo. Diretor/modelo. Gerente que herda o modelo.FuncionarioAdmin que implementa o metodo
     autentica da interface modelo.Autenticavel então elas não pedirão para implementar o metodo autentica no modelo.
-    Diretor e modelo.Gerente, porém se na classe modelo.FuncionarioAdmin não implememtar autentica, vai precisar
+    Diretor e modelo. Gerente, porém se na classe modelo.FuncionarioAdmin não implememtar autentica, vai precisar
     implementar o metodo autentica
 
-    ela é boa quando não quer que a classe pegue metodos que vem, da herança
+    Ela é boa quando não quer que a classe pegue metodos que vem, da herança.
 
-    pode inserir mais de uma herança na classe
+    Pode inserir mais de uma herança na classe.
 
     Para usar o polimorfismo em classes que tem o mesmo comportamento, mas não herdam da mesma classe.
-    Isso mesmo Podemos implementar interfaces em quaisquer classes sem carregar o legado da herança de
-    uma classe que geralmente é implementada para atender um contexto específico e não permite a herança
-    múltipla.
-
-
-    O que aprendemos nessa aula:
+    Podemos implementar interfaces em quaisquer classes sem carregar o legado da herança de uma classe que geralmente é
+    implementada para atender um contexto específico e não permite a herança múltipla.
 
     Utilizar polimorfismo para classes com contextos diferentes, no nosso exemplo: cliente e funcionário;
     Situações que valem a pena ou não manter a implementação por meio de interfaces. */
-
-
 }
 
 
