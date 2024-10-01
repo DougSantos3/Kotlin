@@ -13,14 +13,9 @@ interface interface1 {
     assim val senha: Int = 7 . Importante avisar que o atributo na interface sempre será public e senha não pode ser
     publico.
 
-    Veja que a classe modelo. Diretor/modelo. Gerente que herda o modelo.FuncionarioAdmin que implementa o metodo
-    autentica da interface modelo.Autenticavel então elas não pedirão para implementar o metodo autentica no modelo.
-    Diretor e modelo. Gerente, porém se na classe modelo.FuncionarioAdmin não implememtar autentica, vai precisar
-    implementar o metodo autentica
+    Interface é boa quando não quer que a classe pegue metodos que vem da herança.
 
-    Ela é boa quando não quer que a classe pegue metodos que vem, da herança.
-
-    Pode inserir mais de uma herança na classe.
+    É possivel inserir mais de uma herança na classe.
 
     Para usar o polimorfismo em classes que tem o mesmo comportamento, mas não herdam da mesma classe.
     Podemos implementar interfaces em quaisquer classes sem carregar o legado da herança de uma classe que geralmente é
@@ -36,7 +31,7 @@ package br.com.vraptor.bitBank.begin
 import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
-/*Além das palavras-chave open e final que falamos no para saber mais: herança e superclasse Any, o Kotlin permite
+/* Além das palavras-chave open e final que falamos no para saber mais: herança e superclasse Any, o Kotlin permite
 declarar uma classe como abstract. Ao criar uma classe abstrata(abstract), informamos que ela passará a ser abstrata e
 não poderá ser instanciada, assim como se declararmos seus membros como abstratos, estes também não poderão ser
 implementados.
