@@ -1,4 +1,3 @@
-
 package br.com.vraptor.bitBank.begin
 
 import br.com.vraptor.bitBank.begin.modelo.Cliente
@@ -12,7 +11,7 @@ comportamentos inadequados. Quando temos uma classe herdável que não queremos 
 open pelo abstract e assim manter o comportamento desejado.
 Já as classes seladas, ou sealed classes, permitem um nível a mais de segurança e controle sobre a herança. As classes
 seladas são originalmente abstratas e não permitem que existam subclasses fora do pacote ou módulo em que ela foi
-criada, limitando as informações que são conhecidas quando ela é compilada.*/
+criada, limitando as informações que são conhecidas quando ela é compilada. */
 
 abstract class Abstract(
     titular: Cliente,
@@ -29,13 +28,11 @@ abstract class Abstract(
         destino.deposita(valor)
     }
 
-    /* Desafio - Utilizando interfaces no contexto de contas
-    Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o contexto de
-    contas. Por exemplo, na Bytebank pode existir um novo tipo de conta chamada de conta salário.
+    /*  Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o contexto
+    de contas. Por exemplo, na Bytebank pode existir um novo tipo de conta chamada de conta salário.
 
     Esse tipo de conta costuma ter as mesmas informações e comportamentos que uma conta comum, porém com mais
-    restrições. Por exemplo,
-    não é possível usar o serviço de transferência.
+    restrições. Por exemplo, não é possível usar o serviço de transferência.
 
     Considerando esse detalhe, aceite o desafio e crie a conta salário que tem tudo que uma conta tem, com exceção do
     comportamento de transferir. Nesta implementação, mantenha a mesma técnica de polimorfismo na transferência para
@@ -46,16 +43,14 @@ abstract class Abstract(
     compilação.
 
     Basicamente, foi utilizada a técnica de herança para mais de uma classe, dessa forma, uma conta pode ser uma conta
-    normal
-    (modelo.ContaSalario:  modelo.Conta), como também uma conta que permite a transferência (modelo.ContaCorrente:
+    normal(modelo.ContaSalario:  modelo.Conta), como também uma conta que permite a transferência (modelo.ContaCorrente:
     modelo.ContaTransferivel)
 
     Poderia utilizar uma interface, porém, dado que a implementação de transferir é a mesma entre as classes e o código
-    altera o saldo, não
-    seria possível ter uma implementação padrão na interface e iria replicar o mesmo código em ambas as contas que
-    precisam transferir.
+    altera o saldo, não seria possível ter uma implementação padrão na interface e iria replicar o mesmo código em
+    ambas as contas que precisam transferir.
     Porém, ao manter a herança esse comportamento não pode ser reutilizado por outras classes que fogem do contexto,
-    ou seja, que não são    contas.
+    ou seja, que não são contas.
 
     Você pode perceber que ambas as abordagens (via herança ou interface) são válidas, o mais importante é saber as
     vantagens e desvantagens e tomar a decisão que atende melhor a regra de negócio. */
