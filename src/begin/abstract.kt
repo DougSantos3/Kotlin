@@ -43,8 +43,8 @@ abstract class Abstract(
     compilação.
 
     Basicamente, foi utilizada a técnica de herança para mais de uma classe, dessa forma, uma conta pode ser uma conta
-    normal(modelo.ContaSalario:  modelo.Conta), como também uma conta que permite a transferência (modelo.ContaCorrente:
-    modelo.ContaTransferivel)
+    normal(modelo.ContaSalario:  modelo.Conta), como também uma conta que permite a transferência
+    (modelo.ContaCorrente: modelo.ContaTransferivel)
 
     Poderia utilizar uma interface, porém, dado que a implementação de transferir é a mesma entre as classes e o código
     altera o saldo, não seria possível ter uma implementação padrão na interface e iria replicar o mesmo código em
