@@ -29,10 +29,10 @@ abstract class Abstract(
     }
 
     /*  Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o contexto
-    de contas. Por exemplo, na Bytebank pode existir um novo tipo de conta chamada de conta salário.
+    de contas. No Bytebank pode existir um novo tipo de conta chamada de conta salário.
 
     Esse tipo de conta costuma ter as mesmas informações e comportamentos que uma conta comum, porém com mais
-    restrições. Por exemplo, não é possível usar o serviço de transferência.
+    restrições. Ela não é possível usar o serviço de transferência.
 
     Considerando esse detalhe, aceite o desafio e crie a conta salário que tem tudo que uma conta tem, com exceção do
     comportamento de transferir. Nesta implementação, mantenha a mesma técnica de polimorfismo na transferência para
