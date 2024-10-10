@@ -4,7 +4,7 @@ import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.FalhaAutenticacaoException
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
-/*globais(acima da classe)
+/* globais(acima da classe)
 
     var totalDeContas: Int = 0
         private set
@@ -29,11 +29,10 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
 }
 
-     sugere o uso de constantes em tempo de compilação (Compile-Time Constants), que são properties imutáveis que não
-     mudam o seu estado, como é o caso de tipos primitivos ou Strings, e que não tenham um getter personalizado:
+    Sugere o uso de constantes em tempo de compilação (Compile-Time Constants), que são properties imutáveis que não
+    mudam o seu estado, como é o caso de tipos primitivos ou Strings, e que não tenham um getter personalizado:
 
-
-     const val taxaAdicional = 0.1
+    const val taxaAdicional = 0.1
 
     Temos o seguinte resultado com a delegação de propriedade:
 
