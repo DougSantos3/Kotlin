@@ -4,15 +4,15 @@ import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.FalhaAutenticacaoException
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
-/* globais(acima da classe)
+// Globais(acima da classe)
 
     var totalDeContas: Int = 0
         private set
-
+/*
     No caso de mutáveis (var), devem ser evitadas, pois podem apresentar inconsistência por permitir a edição em vários
     pontos do código, e vimos esse problema acontecendo no contador. Porém, não temos esse problema com properties
     globais imutáveis (val).
-
+*/
 
     const val taxaAdicional = 0.1
 
@@ -29,25 +29,26 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
 }
 
-    Sugere o uso de constantes em tempo de compilação (Compile-Time Constants), que são properties imutáveis que não
-    mudam o seu estado, como é o caso de tipos primitivos ou Strings, e que não tenham um getter personalizado:
+   /* Sugere o uso de constantes em tempo de compilação (Compile-Time Constants), que são properties imutáveis que não
+    mudam o seu estado, como é o caso de tipos primitivos ou Strings, e que não tenham um getter personalizado: */
+
 
     const val taxaAdicional = 0.1
 
-    Temos o seguinte resultado com a delegação de propriedade:
+    //Temos o seguinte resultado com a delegação de propriedade:
 
     abstract class Conta(
     val titular: Cliente,
     val numeroDeConta: Int
 
-    Com apenas a syntax Autenticavel by titular, é feita a delegação de implementação, como fizemos. A restrição nesse
-    caso é que precisamos operar com properties val, pois não é possível modificar a implementação depois de criarmos
-    uma conta.
-) :*/
+    /* Com apenas a syntax Autenticavel by titular, é feita a delegação de implementação, como fizemos. A restrição
+    nesse caso é que precisamos operar com properties val, pois não é possível modificar a implementação depois de
+    criarmos uma conta. */
+) :
 
 abstract class Metodo_Estatico_Companion_Object(
-    /*Ajuste o código da conta para que componha uma property do tipo Cliente. Para isso, faça com que o titular seja
-    um Cliente.*/
+    /* Ajuste o código da conta para que componha uma property do tipo Cliente. Para isso, faça com que o titular seja
+    um Cliente. */
     var titular: Cliente,
     val numeroDeConta: Int,
 ) : interface1 {
@@ -58,36 +59,30 @@ abstract class Metodo_Estatico_Companion_Object(
         return titular.autentica(senha)
     }
 
-    /*Para saber mais: properties e modificadores de acesso
+    /* Properties e modificadores de acesso
 
     Além das properties, ou propriedades das classes, que definimos com var e val dependendo de sua mutabilidade,
     também temos as propriedades que definem o acesso para leitura ou alteração de informações por meio dos getters e
-     setters, que são declaradas utilizando a seguinte sintaxe:
+     setters, que são declaradas utilizando a seguinte sintaxe: */
 
         var nome = "Jeni"
         get
         set
 
-     Através da utilização dessas properties, também podemos definir os modificadores de visibilidade dos atributos de
+    /* Através da utilização dessas properties, também podemos definir os modificadores de visibilidade dos atributos de
      uma classe sem precisar modificar a visibilidade do atributo diretamente. Isso nos permite especificar quais
      acessos queremos permitir.
 
-    Para conhecer mais sobre as properties no Kotlin e os modificadores de acesso, além de ver outros exemplos de
-    utilização, você pode conferir a documentação abaixo:
-
-    a palavra static não existe no Kotlin
-    nos tempos outra abordagem para criar metodos que podemos chamar estaticamente isso seria a extension function
-     mais o companion object também ajuda a gente nisso
+    palavra static não existe no Kotlin, nos temos outra abordagem para criar metodos que podemos chamar estaticamente
+    isso seria a extension function mais o companion object também ajuda a gente nisso.
 
     O companion object é um recurso que permite criar elementos estáticos dentro de uma classe. Isso permite que
     seus membros possam ser acessados diretamente sem necessidade de criar uma instância.
-    No vídeo anterior, quando criamos nossa função criarGamer dentro do companion object, adicionamos algumas linhas de
-     código copiadas previamente por fins didáticos. Se quiser, você pode copiar daqui as mesmas linhas adicionadas,
-      conforme seguem abaixo:
+    Criamos nossa função criarGamer dentro do companion object. */
 
     companion object {
             fun criarGamer(leitura: Scanner): Gamer {
-                println("Boas vindas ao AluGames! Vamos fazer seu cadastro. Digite seu nome:")
+                println("Boas vindas ao VRaptor Games! Vamos fazer seu cadastro. Digite seu nome:")
                 val nome = leitura.nextLine()
                 println("Digite seu e-mail:")
                 val email = leitura.nextLine()
@@ -108,11 +103,12 @@ abstract class Metodo_Estatico_Companion_Object(
             }
     }
 
+    /*
     Para saber mais sobre o companion object e ver outros exemplos de aplicação, você pode acessar a documentação sobre
     o assunto https://kotlinlang.org/docs/object-declarations.html#companion-objects.
 
     Em seguida, vamos criar um companion object, que é como se fosse o static do Java, para fazermos algumas
-    configurações do nosso teste.*/
+    configurações do nosso teste. */
     companion object {
         var total = 0
             private set
