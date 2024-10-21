@@ -1,20 +1,19 @@
 package br.com.vraptor.bitBank.banco
 
 class Mongo {
-    /*
-    sql == nosql
+    /* sql == nosql
 
-    Tabela == Coleções(collection)
+       Tabela == Coleções(collection)
 
-    select == find
+       select == find
 
-    insert into ==  insertOne
+       insert into ==  insertOne
 
-    update == updateOne
+       update == updateOne
 
-    delete == deleteOne
+       delete == deleteOne
 
-    1 registro == documento
+       1 registro == documento
 
 
 

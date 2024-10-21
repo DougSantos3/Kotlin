@@ -2,7 +2,7 @@ package br.com.vraptor.bitBank.banco
 
 class dao {
 
-    /*O DAO (Data Access Object) é um padrão de projeto que é frequentemente usado para abstrair e encapsular o acesso
+    /* O DAO (Data Access Object) é um padrão de projeto que é frequentemente usado para abstrair e encapsular o acesso
     a um banco de dados ou a uma fonte de dados similar em uma aplicação. O principal objetivo do DAO é separar a
     lógica de acesso a dados(repository) da lógica de negócios(services), proporcionando uma camada de abstração que
     facilite a manutenção e a evolução da aplicação.
@@ -148,6 +148,6 @@ class dao {
     escalabilidade.
     Essas são algumas das principais implementações do JPA disponíveis atualmente, cada uma com suas próprias
     características e vantagens. A escolha da implementação depende dos requisitos específicos do projeto, das
-    preferências da equipe de desenvolvimento e do ecossistema tecnológico em que o aplicativo está sendo desenvolvido.
-    */
+    preferências da equipe de desenvolvimento e do ecossistema tecnológico em que o aplicativo está sendo
+    desenvolvido. */
 }
