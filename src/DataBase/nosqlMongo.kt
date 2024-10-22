@@ -19,18 +19,14 @@ class Mongo {
 
     Buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
 
-
-
-
-
                                            Studio3t ou MongoDB Compass
 
 
+    Após executarmos o comando use para nos conectarmos ao banco de dados, podemos inserir nosso primeiro documento
+    pela linha de comando. Para isso, usaremos o método insertOne.
 
 
-
-
-                                                                Inserir
+                                                             Inserir
 
     db.users.insertOne(                  ← collection
        {
@@ -39,12 +35,8 @@ class Mongo {
          status: "pending"               ← field: value ↗
 
         }
-      )
+    )
 
-
-
-    Após executarmos o comando use para nos conectarmos ao banco de dados, podemos inserir nosso primeiro
-    documento pela linha de comando. Para isso, usaremos o método insertOne.
 
     db.series.insertOne({
     "Série": "Fleabag",
@@ -55,7 +47,7 @@ class Mongo {
 
 
 
-                             Além do insertOne, podemos usar o insertMany na inserção de mais de um documento por vez.
+    Além do insertOne, podemos usar o insertMany na inserção de mais de um documento por vez.
 
 
 
