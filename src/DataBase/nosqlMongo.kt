@@ -1,26 +1,25 @@
 package br.com.vraptor.bitBank.banco
 
 class Mongo {
-    /* sql == nosql
+      /* Studio3t(evolução do robot3t) ou MongoDB Compass
 
-       Tabela == Coleções(collection)
+       sql         ==   nosql
 
-       select == find
+       tabela      ==   coleções(collection)
 
-       insert into ==  insertOne
+       select      ==   find
 
-       update == updateOne
+       insert into ==   insertOne
 
-       delete == deleteOne
+       update      ==   updateOne
 
-       1 registro == documento
+       delete      ==   deleteOne
+
+       registro    ==   documento
 
 
 
     Buscar, inserir, atualizar e remover podem ser feitos pelo terminal ou pela IDE mongo compass
-
-                                           Studio3t ou MongoDB Compass
-
 
     Após executarmos o comando use para nos conectarmos ao banco de dados, podemos inserir nosso primeiro documento
     pela linha de comando. Para isso, usaremos o método insertOne.
@@ -38,21 +37,21 @@ class Mongo {
     )
 
 
-    db.series.insertOne({
-    "Série": "Fleabag",
-            "Ano de lançamento": 2016,
-            "Temporadas disponíveis": 2,
-            "Linguagem": "Inglês",
-            "IMDb Avaliação": 8.7})
-
-
+    db.series.insertOne(
+         {
+          "Série": "Fleabag",
+          "Ano de lançamento": 2016,
+          "Temporadas disponíveis": 2,
+          "Linguagem": "Inglês",
+          "IMDb Avaliação": 8.7
+         }
+     )
 
     Além do insertOne, podemos usar o insertMany na inserção de mais de um documento por vez.
 
-
-
-    db.series.insertMany([
-    {       "Série": "Made in Heaven",
+    db.series.insertMany(
+           [{
+            "Série": "Made in Heaven",
             "Temporadas disponíveis": 1,
             "Linguagem": "Hindi",
             "Genero": ["Drama"],
