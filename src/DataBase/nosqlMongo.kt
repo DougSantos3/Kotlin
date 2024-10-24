@@ -71,7 +71,6 @@ class Mongo {
     É possivel inserir dados pelo documento json ou csv importando também.
 
 
-
     Consultas de dados
 
     Filter {"Ano de lançamento": 2020}
@@ -209,11 +208,11 @@ class Mongo {
        { status: "reject" }  ← delete filter
     )
 
-    Series> db.series.find({"Série": "The Boys"})
+    db.series.find({"Série": "Reis"})
 
-    db.series.deleteOne({"Série": "The Boys"})
+    db.series.deleteOne({"Série": "Reis"})
 
-    db.series.deleteMany({"Temporadas disponíveis": 1})
+    db.series.deleteMany({"Temporadas disponíveis": 12})
 
 
 
