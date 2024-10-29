@@ -7,6 +7,8 @@ class Mongo {
 
        tabela      ==   coleções(collection)
 
+       registro    ==   documento
+
        select      ==   find
 
        insert into ==   insertOne
@@ -15,7 +17,7 @@ class Mongo {
 
        delete      ==   deleteOne
 
-       registro    ==   documento
+
 
 
 
@@ -23,7 +25,6 @@ class Mongo {
 
     Após executarmos o comando use para nos conectarmos ao banco de dados, podemos inserir nosso primeiro documento
     pela linha de comando. Para isso, usaremos o método insertOne.
-
 
                                                              Inserir
 
@@ -50,21 +51,22 @@ class Mongo {
     Além do insertOne, podemos usar o insertMany na inserção de mais de um documento por vez.
 
     db.series.insertMany(
-           [{
+        [{
             "Série": "Made in Heaven",
             "Temporadas disponíveis": 1,
             "Linguagem": "Hindi",
             "Genero": ["Drama"],
             "IMDb Avaliação": 8.3,
             "Classificação": "18+"
-        },{
+           },{
             "Série": "Homecoming",
             "Temporadas disponíveis": 2,
             "Linguagem": "Inglês",
             "Genero": ["Drama"],
             "IMDb Avaliação": 7.5,
             "Classificação": "16+"
-        }])
+        }]
+    )
 
 
 
@@ -181,7 +183,7 @@ class Mongo {
 
     use Series
     switched to db Series
-    Series> db.series.find({"Série": "Grimm"})
+    db.series.find({"Série": "Grimm"})
     [
      {
       _id: ObjectId("62f19a1daf663aad19e5e751"),
