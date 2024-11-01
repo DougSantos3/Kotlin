@@ -4,7 +4,7 @@ import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.FalhaAutenticacaoException
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
-    // Globais(acima da classe)
+    /* Globais(acima da classe) */
 
     var totalDeContas: Int = 0
         private set
