@@ -2,7 +2,7 @@ package br.com.vraptor.bitBank.begin
 
 interface interface1 {
 
-    // Recebe uma senha do tipo Int e devolve um Boolean.
+    /*  Recebe uma senha do tipo Int e devolve um Boolean. */
     fun autentica(senha: Int) : Boolean
 
     /* Interface não tem o constructor () depois do nome dele, só teria se fosse classe abstrata.
