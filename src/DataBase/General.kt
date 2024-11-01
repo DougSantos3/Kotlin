@@ -1,11 +1,9 @@
 package br.com.vraptor.bitBank.banco
 
-class General {
-    /*
-    sql    == noSql
+class General
+/*  sql == noSql
     tabela == documento
     query  == query
-
 
 
     Linhas são chamada de registros
@@ -123,4 +121,4 @@ class General {
     AND l.num_score >= 1080 AND l.des_rating = 'A' AND o.flg_active AND NOT o.flg_whitelist
 
     o.* é o apelido da tabela offer que eu dei na query. Igual o limit tem o apelido l.
-}*/
+} */
