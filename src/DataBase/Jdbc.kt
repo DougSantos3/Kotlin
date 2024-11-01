@@ -1,6 +1,6 @@
 package br.com.vraptor.bitBank.banco
 
-class jdbc {
+class Jdbc {
     /* O JDBC(Java Database Connectivity) é uma API do Java que permite que aplicações interajam com bancos de dados
     relacionais. Essa API fornece um padrão para estabelecer conexões com bancos de dados, enviar consultas SQL, obter
     resultados e manipular dados armazenados em bancos de dados.
