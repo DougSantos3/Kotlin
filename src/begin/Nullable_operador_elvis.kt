@@ -1,7 +1,7 @@
 package br.com.vraptor.bitBank.begin
 
 class NullableOperadorElvis {
-    /*Nullable pode colocar o ? que aceita o null, exemplo endereco?
+    /* Nullable pode colocar o ? que aceita o null, exemplo endereco?
 
     operador safe-call, ?.
     string? é do tipo string ou null
@@ -32,7 +32,7 @@ class NullableOperadorElvis {
 
     Douglas ask:
     então
-    eu sei que 2 pontos de exclamação seria non null, então seria o mesmo com 1 ou2
+    eu sei que 2 pontos de exclamação seria non null, então seria o mesmo com 1 ou 2
     ?
 
     Celso answer:
