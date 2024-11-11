@@ -96,7 +96,7 @@ class Tipagem {
      “Producer Extends” —Se você precisa de uma lista que produza valores do tipo T (você quer ler T’s da lista), você
      precisa declará-la com <out T> (em java: <? extends T>). Mas não é possível adicionar nada a lista.
 
-    === Contravariance/in/Consuma/escrever nessa lista/Mas não há garantia de qual tipo de objeto você leia da Lista  ===========
+    === Contravariance/in/Consuma/escrever nessa lista/Mas não há garantia de qual tipo de objeto você leia da Lista  =
 
     interface Comparable<in T> { //Java: ...Comparable<? super T>...
     operator fun compareTo(other: T): Int
