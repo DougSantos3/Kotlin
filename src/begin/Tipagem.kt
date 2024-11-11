@@ -9,10 +9,8 @@ class Tipagem {
     fun both(t: T): T //comportamento de Invariance
 
 
-    Covariance
+    =================================  Covariance =========================================================
     Covariance implica que uma relação de subtipagem de tipos simples é preservada para os tipos complexos.
-
-    Isso nos permite garantir o seguinte:
 
     open class Ave
     open class Passaro: Ave()
@@ -96,7 +94,10 @@ class Tipagem {
      “Producer Extends” —Se você precisa de uma lista que produza valores do tipo T (você quer ler T’s da lista), você
      precisa declará-la com <out T> (em java: <? extends T>). Mas não é possível adicionar nada a lista.
 
-    === Contravariance/in/Consuma/escrever nessa lista/Mas não há garantia de qual tipo de objeto você leia da Lista  =
+
+    ============== Contravariance/in/Consuma/escrever nessa lista ===================================
+    =============  Mas não há garantia de qual tipo de objeto você leia da Lista  ===================
+    
 
     interface Comparable<in T> { //Java: ...Comparable<? super T>...
     operator fun compareTo(other: T): Int
@@ -152,7 +153,7 @@ class Tipagem {
 
 
 
-    ======== invariant ===================
+    ======================== Invariant ==========================
 
     public interface MutableList<E> : List<E>, MutableCollection<E> {
     override fun add(element: E): Boolean
