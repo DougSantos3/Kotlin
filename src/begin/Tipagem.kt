@@ -9,7 +9,7 @@ class Tipagem {
     fun both(t: T): T //comportamento de Invariance
 
 
-    Covariance
+    =================================  Covariance =========================================================
     Covariance implica que uma relação de subtipagem de tipos simples é preservada para os tipos complexos.
 
     Isso nos permite garantir o seguinte:
@@ -152,7 +152,7 @@ class Tipagem {
 
 
 
-    ======== invariant ===================
+    ======================== Invariant ==========================
 
     public interface MutableList<E> : List<E>, MutableCollection<E> {
     override fun add(element: E): Boolean
