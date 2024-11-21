@@ -1,7 +1,7 @@
 package br.com.vraptor.bitBank.begin
 
 class Tipagem {
-    /* Collection Covariantes, contravariant e invariant
+    /* Collection: Covariantes, contravariant e invariant
 
     interface VarianceExample<T> {
     fun producer(): T //comportamento de Covariance
@@ -26,8 +26,8 @@ class Tipagem {
 
 
     Contravariance
-    Contravariance é o exato oposto de Covariance. Contravariance implica que uma relação de subtipagem de tipos simples
-    é invertida.
+    Contravariance é o exato oposto de Covariance. Contravariance implica que uma relação de subtipagem de tipos
+    simples é invertida.
 
     Vamos entender melhor usando o exemplo anterior:
 
@@ -128,8 +128,8 @@ class Tipagem {
 
 
     “Consumer Super” — Se você precisa de uma lista que consuma valores do tipo T (você quer escrever T’s nessa lista),
-     você precisa declará-la com <in T> (em java: <? super T>). Mas não há garantida qual tipo de objeto você leia dessa
-     lista.}
+     você precisa declará-la com <in T> (em java: <? super T>). Mas não há garantida qual tipo de objeto você leia
+     dessa lista.}
 
       Pode sim  haver in e on no mesmo metodo, o invariance foi criado para proteger externamente não para proteger
       você de quebrar a código.
