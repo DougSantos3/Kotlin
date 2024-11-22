@@ -9,6 +9,11 @@ class Tipagem {
     fun both(t: T): T //comportamento de Invariance
 
 
+
+
+
+
+
     =================================  Covariance =========================================================
     Covariance implica que uma relação de subtipagem de tipos simples é preservada para os tipos complexos.
 
