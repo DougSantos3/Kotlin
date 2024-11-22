@@ -91,7 +91,7 @@ class Tipagem {
     declaração da classe, por isso o nome declaration-site.
 
 
-     “Producer Extends” —Se você precisa de uma lista que produza valores do tipo T (você quer ler T’s da lista), você
+     Producer Extends —Se você precisa de uma lista que produza valores do tipo T (você quer ler T’s da lista), você
      precisa declará-la com <out T> (em java: <? extends T>). Mas não é possível adicionar nada a lista.
 
 
@@ -122,22 +122,22 @@ class Tipagem {
     subtipagem é invertida. O que nos permite atribuir qualquer supertipo de Integer a uma lista de Integer.
 
 
-    “Consumer Super” — Se você precisa de uma lista que consuma valores do tipo T (você quer escrever T’s nessa lista),
+    Consumer Super — Se você precisa de uma lista que consuma valores do tipo T (você quer escrever T’s nessa lista),
     você precisa declará-la com <in T> (em java: <? super T>). Mas não há garantida qual tipo de objeto você leia dessa
     lista.
 
 
-    “Consumer Super” — Se você precisa de uma lista que consuma valores do tipo T (você quer escrever T’s nessa lista),
-     você precisa declará-la com <in T> (em java: <? super T>). Mas não há garantida qual tipo de objeto você leia
-     dessa lista.}
+    Consumer Super — Se você precisa de uma lista que consuma valores do tipo T (você quer escrever T’s nessa lista),
+    você precisa declará-la com <in T> (em java: <? super T>). Mas não há garantida qual tipo de objeto você leia
+    dessa lista.}
 
-      Pode sim  haver in e on no mesmo metodo, o invariance foi criado para proteger externamente não para proteger
-      você de quebrar a código.
+    Pode sim  haver in e on no mesmo metodo, o invariance foi criado para proteger externamente não para proteger
+    você de quebrar a código.
 
-      Se colocar private na variant o que não compila vai começar a compilar. Podemos perceber que field1 agora é
-      compilado sem erro. Porque? Como dito anteriormente, o conceito de variance é para te proteger de usuários
-      externos, dado que agora seu field1 é private, é como se você estivesse dizendo ao compilador “eu sei o que estou
-      fazendo aqui”.
+    Se colocar private na variant o que não compila vai começar a compilar. Podemos perceber que field1 agora é
+    compilado sem erro. Porque? Como dito anteriormente, o conceito de variance é para te proteger de usuários
+    externos, dado que agora seu field1 é private, é como se você estivesse dizendo ao compilador “eu sei o que estou
+    fazendo aqui”.
 
 
     contains, containsAll e indexOf?
