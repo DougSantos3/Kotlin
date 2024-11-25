@@ -5,7 +5,8 @@ class Tipagem {
 
     interface VarianceExample<T> {
 
-    @here
+
+
     ============  Covariance/out/produza/leia uma lista/Não adiciona nada na lista ==========
     ============  As variaveis vão poder ser chamada com o tipos da sub class =========
     ============  Em Java Se usa os wildcats curinga para fazer o mesmo  ===============
