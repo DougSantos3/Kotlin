@@ -4,17 +4,18 @@ class Tipagem {
     /* Collection: Covariantes, contravariant e invariant
 
     interface VarianceExample<T> {
-    fun producer(): T //comportamento de Covariance
-    fun consumer(t: T) //comportamento de Contravariance
-    fun both(t: T): T //comportamento de Invariance
+        fun producer(): T //comportamento de Covariance
+        fun consumer(t: T) //comportamento de Contravariance
+        fun both(t: T): T //comportamento de Invariance
 
 
 
 
+    ============  Covariance/out/produza/leia uma lista/Não adiciona nada na lista ==========
+    ============  As variaveis vão poder ser chamada com o tipos da sub class =========
+    ============  Em Java Se usa os wildcats curinga para fazer o mesmo  ===============
+    ============  Sem isso nao e possivel fazer o polimorfismo =========================
 
-
-
-    =================================  Covariance =========================================================
     Covariance implica que uma relação de subtipagem de tipos simples é preservada para os tipos complexos.
 
     open class Ave
@@ -28,44 +29,6 @@ class Tipagem {
 
     Passaro e Arara são subclasses de Ave, então nós podemos atribuir uma Arara ou um Passaro para uma Ave, isso é
     covariance.
-
-
-    Contravariance
-    Contravariance é o exato oposto de Covariance. Contravariance implica que uma relação de subtipagem de tipos
-    simples é invertida.
-
-    Vamos entender melhor usando o exemplo anterior:
-
-
-    open class Ave
-    open class Passaro: Ave()
-    open class Arara: Ave()
-    var arara: Arara = Ave()
-    var passaro: Passaro = Ave()
-
-
-    A atribuição acima apenas é permitida usando contravariance, onde a subtipagem é invertida. Nesse caso. agora Ave é
-    um subtipo de Arara e Passaro.
-
-    Invariance
-    Por último, o mais simples, mas não menos importante. Invariance ignora subtipo e supertipo, o que significa que
-    dado um tipo, apenas aquele tipo poderá ser consumido ou produzido, vamos a um exemplo:
-
-
-    interface Invariance <T> {
-    fun consumer(t: T)
-    fun producer(): T
-    fun both(t: T): T
-    }
-
-    Dado um tipo T, tanto o input quanto o output apenas poderá ser T. Usando esse conceito, nós podemos ter o método
-    acima both(t: T): T que é tanto um consumer quanto um producer.
-
-
-    ============  Covariance/out/produza/leia uma lista/Não adiciona nada na lista ==========
-    ============  As variaveis vão poder ser chamada com o tipos da sub class =========
-    ============  Em Java Se usa os wildcats curinga para fazer o mesmo  ===============
-    ============  Sem isso nao e possivel fazer o polimorfismo =========================
 
 
     wildcard bellow
@@ -100,9 +63,27 @@ class Tipagem {
      precisa declará-la com <out T> (em java: <? extends T>). Mas não é possível adicionar nada a lista.
 
 
+
+
     ============== Contravariance/in/Consuma/escrever nessa lista ===================================
     =============  Mas não há garantia de qual tipo de objeto você leia da Lista  ===================
-    
+
+    Contravariance
+    Contravariance é o exato oposto de Covariance. Contravariance implica que uma relação de subtipagem de tipos
+    simples é invertida.
+
+    Vamos entender melhor usando o exemplo anterior:
+
+
+    open class Ave
+    open class Passaro: Ave()
+    open class Arara: Ave()
+    var arara: Arara = Ave()
+    var passaro: Passaro = Ave()
+
+
+    A atribuição acima apenas é permitida usando contravariance, onde a subtipagem é invertida. Nesse caso. agora Ave é
+    um subtipo de Arara e Passaro.
 
     interface Comparable<in T> { //Java: ...Comparable<? super T>...
     operator fun compareTo(other: T): Int
@@ -159,6 +140,20 @@ class Tipagem {
 
 
     ======================== Invariant ==========================
+
+    Invariance
+    Por último, o mais simples, mas não menos importante. Invariance ignora subtipo e supertipo, o que significa que
+    dado um tipo, apenas aquele tipo poderá ser consumido ou produzido, vamos a um exemplo:
+
+
+    interface Invariance <T> {
+    fun consumer(t: T)
+    fun producer(): T
+    fun both(t: T): T
+    }
+
+    Dado um tipo T, tanto o input quanto o output apenas poderá ser T. Usando esse conceito, nós podemos ter o método
+    acima both(t: T): T que é tanto um consumer quanto um producer.
 
     public interface MutableList<E> : List<E>, MutableCollection<E> {
     override fun add(element: E): Boolean
