@@ -4,13 +4,8 @@ class Tipagem {
     /* Collection: Covariantes, contravariant e invariant
 
     interface VarianceExample<T> {
-        fun producer(): T //comportamento de Covariance
-        fun consumer(t: T) //comportamento de Contravariance
-        fun both(t: T): T //comportamento de Invariance
 
-
-
-
+    @here
     ============  Covariance/out/produza/leia uma lista/Não adiciona nada na lista ==========
     ============  As variaveis vão poder ser chamada com o tipos da sub class =========
     ============  Em Java Se usa os wildcats curinga para fazer o mesmo  ===============
@@ -172,6 +167,12 @@ class Tipagem {
     Como podemos ver, MutableList é invariant em E. O motivo pra isso é que essa lista precisa ser tanto consumer
     quanto producer em E. Se MutableList fosse covariant(on, produtora, só leitura) em E, por exemplo, os métodos add,
     remove, addAll não seriam possíveis.
+
+
+
+    fun producer(): T //comportamento de Covariance
+       fun consumer(t: T) //comportamento de Contravariance
+       fun both(t: T): T //comportamento de Invariance
 
     https://medium.com/android-dev-br/generics-e-variance-em-kotlin-in-out-t-ca5ca07c9fc5 */
 }
