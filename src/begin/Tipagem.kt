@@ -55,8 +55,8 @@ class Tipagem {
     declaração da classe, por isso o nome declaration-site.
 
 
-     Producer Extends —Se você precisa de uma lista que produza valores do tipo T (você quer ler T’s da lista), você
-     precisa declará-la com <out T> (em java: <? extends T>). Mas não é possível adicionar nada a lista.
+    Producer Extends —Se você precisa de uma lista que produza valores do tipo T (você quer ler T’s da lista), você
+    precisa declará-la com <out T> (em java: <? extends T>). Mas não é possível adicionar nada a lista.
 
 
 
