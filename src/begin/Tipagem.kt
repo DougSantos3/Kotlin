@@ -4,9 +4,9 @@ class Tipagem {
     /* Collection: Covariantes, contravariant e invariant
 
     interface VarianceExample<T> {
-    fun producer(): T //comportamento de Covariance
-    fun consumer(t: T) //comportamento de Contravariance
-    fun both(t: T): T //comportamento de Invariance
+        fun producer(): T //comportamento de Covariance
+        fun consumer(t: T) //comportamento de Contravariance
+        fun both(t: T): T //comportamento de Invariance
 
 
 
