@@ -5,8 +5,6 @@ class Tipagem {
 
     interface VarianceExample<T> {
 
-
-
     ============  Covariance/out/produza/leia uma lista/Não adiciona nada na lista ==========
     ============  As variaveis vão poder ser chamada com o tipos da sub class =========
     ============  Em Java Se usa os wildcats curinga para fazer o mesmo  ===============
@@ -64,7 +62,6 @@ class Tipagem {
     ============== Contravariance/in/Consuma/escrever nessa lista ===================================
     =============  Mas não há garantia de qual tipo de objeto você leia da Lista  ===================
 
-    Contravariance
     Contravariance é o exato oposto de Covariance. Contravariance implica que uma relação de subtipagem de tipos
     simples é invertida.
 
@@ -135,9 +132,8 @@ class Tipagem {
 
 
 
-    ======================== Invariant ==========================
+    ======================== Invariance ==========================
 
-    Invariance
     Por último, o mais simples, mas não menos importante. Invariance ignora subtipo e supertipo, o que significa que
     dado um tipo, apenas aquele tipo poderá ser consumido ou produzido, vamos a um exemplo:
 
@@ -170,6 +166,7 @@ class Tipagem {
     remove, addAll não seriam possíveis.
 
 
+    Abaixo resumos de todos
 
     fun producer(): T //comportamento de Covariance
        fun consumer(t: T) //comportamento de Contravariance
