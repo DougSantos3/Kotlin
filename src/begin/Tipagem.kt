@@ -1,12 +1,12 @@
 package br.com.vraptor.bitBank.begin
 
 class Tipagem {
-    /* Collection(Variant): Covariant, contravariant e invariant
+    /* Collection(Variant): Covariant, Contravariant e Invariant
 
     interface VarianceExample<T> {
 
     ============  Covariance/out/produza/leia uma lista/Não adiciona nada na lista ==========
-    ============  As variaveis vão poder ser chamada com o tipos da sub class =========
+    ============  As variaveis vão poder ser chamada com o tipos da sub classe =========
     ============  Em Java Se usa os wildcats curinga para fazer o mesmo  ===============
     ============  Sem isso nao e possivel fazer o polimorfismo =========================
 
