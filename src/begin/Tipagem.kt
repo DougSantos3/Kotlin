@@ -1,7 +1,7 @@
 package br.com.vraptor.bitBank.begin
 
 class Tipagem {
-    /* Collection: Covariantes, contravariant e invariant
+    /* Collection(Variant): Covariant, contravariant e invariant
 
     interface VarianceExample<T> {
 
