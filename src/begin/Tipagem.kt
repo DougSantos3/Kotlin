@@ -10,7 +10,7 @@ class Tipagem {
     ============  Em Java Se usa os wildcats curinga para fazer o mesmo  ===============
     ============  Sem isso nao e possivel fazer o polimorfismo =========================
 
-    Covariance implica que uma relação de subtipagem de tipos simples é preservada para os tipos complexos.
+    Implica que uma relação de subtipagem de tipos simples é preservada para os tipos complexos.
 
     open class Ave
     open class Passaro: Ave()
@@ -62,7 +62,7 @@ class Tipagem {
     ============== Contravariance/in/Consuma/escrever nessa lista ===================================
     =============  Mas não há garantia de qual tipo de objeto você leia da Lista  ===================
 
-    Contravariance é o exato oposto de Covariance. Contravariance implica que uma relação de subtipagem de tipos
+    É o exato oposto de Covariance. Contravariance implica que uma relação de subtipagem de tipos
     simples é invertida.
 
     Vamos entender melhor usando o exemplo anterior:
@@ -168,7 +168,7 @@ class Tipagem {
 
     Abaixo resumos de todos
 
-    fun producer(): T //comportamento de Covariance
+       fun producer(): T //comportamento de Covariance
        fun consumer(t: T) //comportamento de Contravariance
        fun both(t: T): T //comportamento de Invariance
 
