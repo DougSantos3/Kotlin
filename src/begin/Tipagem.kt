@@ -139,9 +139,9 @@ class Tipagem {
 
 
     interface Invariance <T> {
-    fun consumer(t: T)
-    fun producer(): T
-    fun both(t: T): T
+        fun consumer(t: T)
+        fun producer(): T
+        fun both(t: T): T
     }
 
     Dado um tipo T, tanto o input quanto o output apenas poderá ser T. Usando esse conceito, nós podemos ter o método
