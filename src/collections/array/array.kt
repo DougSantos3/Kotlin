@@ -4,13 +4,12 @@ import java.math.BigDecimal
 import java.math.RoundingMode
 
 fun generateArray() {
-    /*
-   First example:
-   Introdução ao arrays
-      Construindo arrays
-      Iterando por um array
-      Alterando um elemento
-      Para saber mais: Double e valores monetários
+    /* First example:
+    Introdução ao arrays
+    Construindo arrays
+    Iterando por um array
+    Alterando um elemento
+    Para saber mais: Double e valores monetários
 
     Funções de agregação
       Ranges
@@ -18,33 +17,32 @@ fun generateArray() {
       Array de objetos
       Processando coleções
 
-      Array junta um grupo de objeto do mesmo tipo em um objeto só
+    Array junta um grupo de objeto do mesmo tipo em um objeto só
 
-   Criar um algoritmo para mostrar quem é o funcionario mais velho em idade
+    Criar um algoritmo para mostrar quem é o funcionario mais velho em idade
 
-   Nessa aula aprendemos a criar variáveis do tipo inteiro e como compará-las utilizando uma estrutura de ifs
-   aninhados:
+    Aprendemos a criar variáveis do tipo inteiro e como compará-las utilizando uma estrutura de ifs
+    aninhados: */
 
-  val idade1 = 25
-  val idade2 = 19
-  val idade3 = 33
-  val idade4 = 20
+    val idade1 = 25
+    val idade2 = 19
+    val idade3 = 33
+    val idade4 = 20
 
-  val maiorIdade = if (idade1 > idade2 && idade1 > idade3 && idade1 > idade4) {
-      idade1
-  } else if (idade2 > idade3 && idade2 > idade4) {
-      idade2
-  } else if (idade3 > idade4) {
-      idade3
-  } else {
-      idade4
-  }
+    val maiorIdade = if (idade1 > idade2 && idade1 > idade3 && idade1 > idade4) {
+        idade1
+    } else if (idade2 > idade3 && idade2 > idade4) {
+        idade2
+    } else if (idade3 > idade4) {
+        idade3
+    } else {
+        idade4
+    }
 
-  println(maiorIdade)
-*/
+    println(maiorIdade)
 
-    /*
-    Second Example:
+
+    /* Second Example:
     Em seguida vimos que utilizar variáveis comuns não é o ideal para fazer esse tipo de comparação. Um estrutura
     mais própria para essa tarefa seria a utilização de arrays. Então modificamos o código anterior para a nova
     versão:
@@ -65,9 +63,7 @@ fun generateArray() {
         idades[3]
     }
     println(maiorIdade)
-*/
 
-    /*
     Thirth example:
     Essa é uma forma funcional de declarar um array de idades, mas existe uma forma mais simples e mais concisa de
     fazer a mesma coisa:
@@ -97,7 +93,7 @@ fun generateArray() {
     adicionar mais uma idade no nosso array, não seria necessário alterar o algoritmo que identifica qual é a maior
     idade:
 
-    //Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array:
+    Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array:
 
 
 
@@ -115,9 +111,6 @@ fun generateArray() {
         }
     }
 
-*/
-
-    /*
     Fouth example:
     Calcular 10% de aumento do salario de um funcionario na empresa
     O patrão acha que os funcionarios tem que ter um aumento de 10% do salario mais caso o funcionario receba menos de
@@ -152,8 +145,7 @@ fun generateArray() {
         //Salario no forEachIndexed: 9680.0
         //Salario no forEachIndexed: 12100.000000000002
     }
-*/
-    /*
+
     Fifty example:
     Nesta lição, nós aprendemos que podemos utilizar ranges para simplificar condições que visam identificar
     intervalos:
@@ -174,10 +166,7 @@ fun generateArray() {
             //3000.0
         }
     }
-    */
 
-
-    /*
     Sixty example:
     Utilizando funções agregadoras em conjunto com ranges, podemos simplificar esse código para:
 
@@ -190,10 +179,8 @@ fun generateArray() {
     //código simplificado
     val contador = salarios.count { it in base..topo}
     println("Quantidade de salarios que estão entre a base e o topo: ${contador}") //Quantidade de salarios que estão entre a base e o topo: 3
-    */
 
 
-    /*
     Seventh
     Aprendemos, então, a utilizar outras funções agregadoras e
     de processamento de coleções, como uma forma mais concisa de encontrar o maior valor dentro de um array:
@@ -209,9 +196,7 @@ fun generateArray() {
 
     val media: Double = idades.average() //Media: 32.0
 
-    */
 
-    /*
     Eighth:
     Para identificar se todos ou qualquer um dos elementos de uma lista se adequam a determinada condição, utilizamos
     respectivamente as funções all e any:
@@ -223,10 +208,8 @@ fun generateArray() {
 
     val todosMaiores: Boolean = idades.all { it >= 18 } //all == seria o && - Todos Maiores: true. Se existir um menor volta false
     val existeMenor: Boolean = idades.any { it < 18 } //any == seria || - Existe Menor: false. Se existir um menor apenas volta true
-    */
 
 
-    /*
     //Ninith
     Vimos c
     omo filtrar valores utilizando a função filter:
@@ -248,9 +231,7 @@ fun generateArray() {
     val outrosMenores: IntArray = idades.filter { it < 18}.toIntArray() //Menores: [I@7ef20235
     println("Menores: ${outrosMenores}")
 
-    */
 
-    /*
     Tenth
 
     Para verificar se um valor específico está contido no array, ou fazer uma busca por esse valor, vimos como usar,
@@ -263,10 +244,7 @@ fun generateArray() {
     println("Contem Dez: ${contemDez}")
     println("Idade: ${idade}")
 
-*/
 
-
-    /*
     Eleventh:
     Para fazer o cálculo dos salários do tipo BigDecimal, primeiro criamos uma função para criar o array de BigDecimal:
 
@@ -309,10 +287,7 @@ fun generateArray() {
     println("Aumento ${aumento}") //Aumento 1.1
     println("Salarios com aumento: ${salariosComAumento.contentToString()}") //Salarios com aumento: [2000.55, 2500.00, 5500.00, 11000.00]
 
-    */
 
-
-    /*
     Twelveth:
 
     Numa competição de saltos ornamentais, cada competidor recebe 4 notas dos jurados. A menor nota é descartada e depois é tirada a média simples das 3 notas restantes.
@@ -323,15 +298,7 @@ fun generateArray() {
     //Essas funções, exatamente nessa ordem, vão produzir o resultado desejado.
     val media = notas.sorted().takeLast(3).average()
 
-    */
 
-
-
-
-
-
-
-    /*
     Thirth:
     Operações compostas
            Somatoria com Reduce
@@ -350,7 +317,6 @@ fun generateArray() {
 
     Nesta aula, para calcular a soma do array de salários, criamos uma extension function para os arrays do tipo
     BigDecimal, utilizando a função reduce:
-    */
 
     fun Array<BigDecimal>.somatoria(): BigDecimal {
         return this.reduce { acumulador, valor ->
@@ -460,4 +426,4 @@ fun generateArray() {
     //Media
     //10000.55 / 3(size)
 
-}
+} */
