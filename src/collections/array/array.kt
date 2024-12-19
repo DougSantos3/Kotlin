@@ -5,11 +5,7 @@ import java.math.RoundingMode
 
 fun generateArray() {
     /* First example:
-    Introdução ao arrays
-    Construindo arrays
-    Iterando por um array
-    Alterando um elemento
-    Para saber mais: Double e valores monetários
+    Construindo arrays/ Iterando por um array/ Alterando um elemento
 
     Funções de agregação
       Ranges
@@ -45,7 +41,7 @@ fun generateArray() {
     /* Second Example:
     Em seguida vimos que utilizar variáveis comuns não é o ideal para fazer esse tipo de comparação. Um estrutura
     mais própria para essa tarefa seria a utilização de arrays. Então modificamos o código anterior para a nova
-    versão:
+    versão: */
 
     val idades = IntArray(4)
     idades[0] = 25
@@ -64,16 +60,16 @@ fun generateArray() {
     }
     println(maiorIdade)
 
-    Thirth example:
+    /* Thirth example:
     Essa é uma forma funcional de declarar um array de idades, mas existe uma forma mais simples e mais concisa de
-    fazer a mesma coisa:
+    fazer a mesma coisa: */
 
     val idades: IntArray = intArrayOf(25, 19, 33, 20)
 
-    Apesar de deixarmos o código um pouco mais dinâmico dessa forma, ainda não resolvemos o problema dos ifs
+    /* Apesar de deixarmos o código um pouco mais dinâmico dessa forma, ainda não resolvemos o problema dos ifs
     aninhados. Vimos então que, para resolver o problema de ifs aninhados, precisamos utilizar uma estrutura de
     repetição para iterar por todos os elementos do array sem precisarmos descrever um por um, como exemplo de
-    estrutura de repetição, utilizamos o laço for:
+    estrutura de repetição, utilizamos o laço for: */
 
     val idades: IntArray = intArrayOf(25, 19, 33, 20)
 
@@ -89,11 +85,10 @@ fun generateArray() {
         }
     }
 
-    Dessa forma a gente conseguiu reduzir muito a complexidade do nosso sistema, de forma que, caso a gente precise
+    /* Dessa forma a gente conseguiu reduzir muito a complexidade do nosso sistema, de forma que, caso a gente precise
     adicionar mais uma idade no nosso array, não seria necessário alterar o algoritmo que identifica qual é a maior
     idade:
-
-    Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array:
+    Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array: */
 
 
 
@@ -111,7 +106,7 @@ fun generateArray() {
         }
     }
 
-    Fouth example:
+    /* Fouth example:
     Calcular 10% de aumento do salario de um funcionario na empresa
     O patrão acha que os funcionarios tem que ter um aumento de 10% do salario mais caso o funcionario receba menos de
     5000k que os 10% dará menos que 500 reias exemplo funcionario ganha 2000k 10% da 200,00 e não chega a 500,00 nesse
