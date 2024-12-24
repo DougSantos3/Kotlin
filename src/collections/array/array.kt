@@ -113,7 +113,7 @@ fun generateArray() {
     caso ele aumentaria para 500,00 e para quem ganha mais de 5000k vai ser 10% normal de bônus no seu salario. Precisa
     arredondar sem usar o double, use o bigDecimal que é do java
     Depois disso, a gente viu como alterar arrays para adicionar 10% de aumento no salário dos funcionários de uma
-    empresa:
+    empresa: */
 
     val salarios: DoubleArray = doubleArrayOf(1500.50, 2300.0, 500.0, 8000.0, 10000.0)
 
