@@ -134,16 +134,17 @@ fun generateArray() {
     salarios.forEachIndexed { indice, salario ->
         salarios[indice] = salario * aumento
         println("Salario no forEachIndexed: ${salarios[indice]}")
-        //Salario no forEachIndexed: 1815.6050000000002
-        //Salario no forEachIndexed: 2783.0
-        //Salario no forEachIndexed: 605.0
-        //Salario no forEachIndexed: 9680.0
-        //Salario no forEachIndexed: 12100.000000000002
+        /*Salario no forEachIndexed: 1815.6050000000002
+          Salario no forEachIndexed: 2783.0
+          Salario no forEachIndexed: 605.0
+          Salario no forEachIndexed: 9680.0
+          Salario no forEachIndexed: 12100.000000000002 */
     }
 
-    Fifty example:
+
+    /* Fifty example:
     Nesta lição, nós aprendemos que podemos utilizar ranges para simplificar condições que visam identificar
-    intervalos:
+    intervalos: */
 
 
     val salarios: DoubleArray = doubleArrayOf(1500.50, 2300.0, 500.0, 8000.0, 10000.0, 4000.1, 3000.0)
