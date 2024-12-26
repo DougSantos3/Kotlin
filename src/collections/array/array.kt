@@ -62,11 +62,9 @@ fun generateArray() {
 
     /* Thirth example:
     Essa é uma forma funcional de declarar um array de idades, mas existe uma forma mais simples e mais concisa de
-    fazer a mesma coisa: */
+    fazer a mesma coisa.
 
-    val idades: IntArray = intArrayOf(25, 19, 33, 20)
-
-    /* Apesar de deixarmos o código um pouco mais dinâmico dessa forma, ainda não resolvemos o problema dos ifs
+    Apesar de deixarmos o código um pouco mais dinâmico dessa forma, ainda não resolvemos o problema dos ifs
     aninhados. Vimos então que, para resolver o problema de ifs aninhados, precisamos utilizar uma estrutura de
     repetição para iterar por todos os elementos do array sem precisarmos descrever um por um, como exemplo de
     estrutura de repetição, utilizamos o laço for: */
@@ -89,8 +87,6 @@ fun generateArray() {
     adicionar mais uma idade no nosso array, não seria necessário alterar o algoritmo que identifica qual é a maior
     idade:
     Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array: */
-
-
 
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
 
