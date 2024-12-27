@@ -78,8 +78,8 @@ fun generateArray() {
         if(maiorIdade < idade) {
             maiorIdade = idade
             println("Dentro do if a maior idade: ${maiorIdade}")
-            //Dentro do if a maior idade: 25
-            //Dentro do if a maior idade: 33
+            /* Dentro do if a maior idade: 25
+            Dentro do if a maior idade: 33 */
         }
     }
 
@@ -159,8 +159,8 @@ fun generateArray() {
         }
     }
 
-    Sixty example:
-    Utilizando funções agregadoras em conjunto com ranges, podemos simplificar esse código para:
+    /* Sixty example:
+    Utilizando funções agregadoras em conjunto com ranges, podemos simplificar esse código para: */
 
 
     val salarios: DoubleArray = doubleArrayOf(1500.50, 2300.0, 500.0, 8000.0, 10000.0, 4000.1, 3000.0)
@@ -189,9 +189,9 @@ fun generateArray() {
     val media: Double = idades.average() //Media: 32.0
 
 
-    Eighth:
+    /* Eighth:
     Para identificar se todos ou qualquer um dos elementos de uma lista se adequam a determinada condição, utilizamos
-    respectivamente as funções all e any:
+    respectivamente as funções all e any: */
 
 
 
@@ -202,9 +202,8 @@ fun generateArray() {
     val existeMenor: Boolean = idades.any { it < 18 } //any == seria || - Existe Menor: false. Se existir um menor apenas volta true
 
 
-    /*Ninith
-    Vimos c
-    omo filtrar valores utilizando a função filter: */
+    /* Ninith
+    Vimos como filtrar valores utilizando a função filter: */
 
 
 
@@ -217,15 +216,12 @@ fun generateArray() {
     println("menores: ${menores}")
 
     /* Essa função, no entanto, retorna uma lista. Caso queira continuar trabalhando com IntArray, utilize a função
-     toIntArray():
-
-    que vai retornar o hash ao invez do valor */
+     toIntArray(): Que vai retornar o hash ao invez do valor */
     val outrosMenores: IntArray = idades.filter { it < 18}.toIntArray() //Menores: [I@7ef20235
     println("Menores: ${outrosMenores}")
 
 
     /* Tenth
-
     Para verificar se um valor específico está contido no array, ou fazer uma busca por esse valor, vimos como usar,
     respectivamente, as funções contains e find: */
 
@@ -239,7 +235,6 @@ fun generateArray() {
 
     /* Eleventh:
     Para fazer o cálculo dos salários do tipo BigDecimal, primeiro criamos uma função para criar o array de BigDecimal:
-
 
     vararg podemos inserir varios parametros
     indice vai navegar nos arrays de valores(no caso parametros), que podem ser inseridos quando quiserem
