@@ -202,9 +202,9 @@ fun generateArray() {
     val existeMenor: Boolean = idades.any { it < 18 } //any == seria || - Existe Menor: false. Se existir um menor apenas volta true
 
 
-    //Ninith
+    /*Ninith
     Vimos c
-    omo filtrar valores utilizando a função filter:
+    omo filtrar valores utilizando a função filter: */
 
 
 
@@ -216,18 +216,18 @@ fun generateArray() {
     println("maiores: ${maiores}")
     println("menores: ${menores}")
 
-    //Essa função, no entanto, retorna uma lista. Caso queira continuar trabalhando com IntArray, utilize a função
-    // toIntArray():
+    /* Essa função, no entanto, retorna uma lista. Caso queira continuar trabalhando com IntArray, utilize a função
+     toIntArray():
 
-    //que vai retornar o hash ao invez do valor
+    que vai retornar o hash ao invez do valor */
     val outrosMenores: IntArray = idades.filter { it < 18}.toIntArray() //Menores: [I@7ef20235
     println("Menores: ${outrosMenores}")
 
 
-    Tenth
+    /* Tenth
 
     Para verificar se um valor específico está contido no array, ou fazer uma busca por esse valor, vimos como usar,
-    respectivamente, as funções contains e find:
+    respectivamente, as funções contains e find: */
 
     val idades: IntArray = intArrayOf(17, 7,25, 19, 33, 20, 55, 40)
 
@@ -237,13 +237,13 @@ fun generateArray() {
     println("Idade: ${idade}")
 
 
-    Eleventh:
+    /* Eleventh:
     Para fazer o cálculo dos salários do tipo BigDecimal, primeiro criamos uma função para criar o array de BigDecimal:
 
 
-    //vararg podemos inserir varios parametros
-    //indice vai navegar nos arrays de valores(no caso parametros), que podem ser inseridos quando quiserem
-    //e vai converter cada valor para bigdecimal e criar o array de bigdecimal
+    vararg podemos inserir varios parametros
+    indice vai navegar nos arrays de valores(no caso parametros), que podem ser inseridos quando quiserem
+    e vai converter cada valor para bigdecimal e criar o array de bigdecimal */
     fun bigDecimalArrayOf(vararg valores: String): Array<BigDecimal> {
         return Array<BigDecimal>(valores.size) { indice ->
             valores[indice].toBigDecimal()
@@ -254,8 +254,8 @@ fun generateArray() {
     val salarios = bigDecimalArrayOf("1500.55", "2000.00", "5000.00", "10000.00")
 
 
-    //Depois, vimos como calcular um aumento relativo a cada salário, em que salários maiores que R$ 5000,00 recebem um
-    //aumento de 10% e salários menores recebem um aumento fixo de R$ 500,00:
+    /* Depois, vimos como calcular um aumento relativo a cada salário, em que salários maiores que R$ 5000,00 recebem um
+    aumento de 10% e salários menores recebem um aumento fixo de R$ 500,00: */
 
 
 
@@ -267,23 +267,24 @@ fun generateArray() {
         }
     }
 
-    //Utilizamos, então, a função map do Kotlin para realizar uma transformação do nosso array de salários atual para
-    // um novo array de salários com aumento:
-    //o map retorna uma outra Lista não um array mais sim uma Lista
-    //toTypeArray é para converter de Lista para Array
+    /* Utilizamos, então, a função map do Kotlin para realizar uma transformação do nosso array de salários atual para
+     um novo array de salários com aumento:
+    o map retorna uma outra Lista não um array mais sim uma Lista
+    toTypeArray é para converter de Lista para Array */
     val aumento = "1.1".toBigDecimal()
     val salariosComAumento: Array<BigDecimal> = salarios.map { salario -> calculaAumentoRelativo(salario, aumento) }.toTypedArray()
 
-    //contentToString é para imprimir o número no terminal se não ele imprimi apenas o hash [Ljava.math.BigDecimal;@87aac27 ou abaixo [Ljava.math.BigDecimal;@6ce253f1
+    /* contentToString é para imprimir o número no terminal se não ele imprimi apenas o hash
+    [Ljava.math.BigDecimal;@87aac27 ou abaixo [Ljava.math.BigDecimal;@6ce253f1 */
     println("salarios: ${salarios.contentToString()}") //salarios: [1500.55, 2000.00, 5000.00, 10000.00]
     println("Aumento ${aumento}") //Aumento 1.1
     println("Salarios com aumento: ${salariosComAumento.contentToString()}") //Salarios com aumento: [2000.55, 2500.00, 5500.00, 11000.00]
 
 
-    Twelveth:
+    /* Twelveth:
 
     Numa competição de saltos ornamentais, cada competidor recebe 4 notas dos jurados. A menor nota é descartada e depois é tirada a média simples das 3 notas restantes.
-    Considerando o seguinte array com as notas de um competidor:
+    Considerando o seguinte array com as notas de um competidor: */
 
     val notas = intArrayOf(7, 5, 8, 9)
 
@@ -291,7 +292,7 @@ fun generateArray() {
     val media = notas.sorted().takeLast(3).average()
 
 
-    Thirth:
+    /* Thirth:
     Operações compostas
            Somatoria com Reduce
            Gasto total com Fold
@@ -308,7 +309,7 @@ fun generateArray() {
     3 são os ultimos maiores
 
     Nesta aula, para calcular a soma do array de salários, criamos uma extension function para os arrays do tipo
-    BigDecimal, utilizando a função reduce:
+    BigDecimal, utilizando a função reduce: */
 
     fun Array<BigDecimal>.somatoria(): BigDecimal {
         return this.reduce { acumulador, valor ->
@@ -335,9 +336,9 @@ fun generateArray() {
         }
     }
 
-    //vararg podemos inserir varios parametros
-    //indice vai navegar nos arrays de valores(no caso parametros), que podem ser inseridos quando quiserem
-    //e vai converter cada valor para bigdecimal e criar o array de bigdecimal
+    /* vararg podemos inserir varios parametros
+    indice vai navegar nos arrays de valores(no caso parametros), que podem ser inseridos quando quiserem
+    e vai converter cada valor para bigdecimal e criar o array de bigdecimal */
     fun bigDecimalArrayOf(vararg valores: String): Array<BigDecimal> {
         return Array<BigDecimal>(valores.size) { indice ->
             valores[indice].toBigDecimal()
@@ -385,8 +386,7 @@ fun generateArray() {
       fold() e reduce() executam operações de dobra e redução em cada grupo como uma coleção separada e retornam os resultados.
 
       fold é relativamente parecido com o reduce para fazer a somatoria, a diferença que o Fold recebe um valor inicial,
-      , no fold pode colocar o gastoInicial que é o gasto com o primeiro mês
-    */
+      , no fold pode colocar o gastoInicial que é o gasto com o primeiro mês */
     val gastoTotal = salariosComAumento.fold(gastoInicial) { acumulador, salario ->
         acumulador + (salario * meses).setScale(2, RoundingMode.UP)
     }
@@ -395,8 +395,8 @@ fun generateArray() {
     println("Meses: ${meses}") //Meses: 6
     println("Gasto Total: ${gastoTotal}") //Gasto Total: 147003.85
 
-    //Criamos, ainda, uma última extension function para os arrays do tipo BigDecimal para calcular a média simples
-    //entre os valores do array:
+    /* Criamos, ainda, uma última extension function para os arrays do tipo BigDecimal para calcular a média simples
+    entre os valores do array: */
 
     fun Array<BigDecimal>.media(): BigDecimal {
         return if(this.isEmpty()) {
@@ -409,13 +409,12 @@ fun generateArray() {
     //E compondo algumas funções diferentes, nós calculamos a média dos 3 maiores e dos 3 menores salários:
     val media = salariosComAumento.sorted().take(3).toTypedArray().media()
     println("Media: ${media}") //Media: 3333.52
-    //Acumulador: 2000.55
-    //Valor: 2500.00
-    // 2000.55 + 2500.00 == 4500.55
-    //Acumulador: 4500.55
-    //Valor: 5500.00
-    // 4500.55 + 5500.00 = 10000.55
-    //Media
-    //10000.55 / 3(size)
-
-} */
+    /* Acumulador: 2000.55
+    Valor: 2500.00
+    2000.55 + 2500.00 == 4500.55
+    Acumulador: 4500.55
+    Valor: 5500.00
+    4500.55 + 5500.00 = 10000.55
+    Media
+    10000.55 / 3(size) */
+}
