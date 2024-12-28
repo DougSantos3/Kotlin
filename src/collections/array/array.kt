@@ -277,8 +277,8 @@ fun generateArray() {
 
 
     /* Twelveth:
-
-    Numa competição de saltos ornamentais, cada competidor recebe 4 notas dos jurados. A menor nota é descartada e depois é tirada a média simples das 3 notas restantes.
+    Numa competição de saltos ornamentais, cada competidor recebe 4 notas dos jurados. A menor nota é descartada e
+    depois é tirada a média simples das 3 notas restantes.
     Considerando o seguinte array com as notas de um competidor: */
 
     val notas = intArrayOf(7, 5, 8, 9)
@@ -361,16 +361,16 @@ fun generateArray() {
     println("salarios Com Aumento: ${salariosComAumento.contentToString()}") //salarios Com Aumento: [2000.55, 2500.00, 5500.00, 11000.00]
 
     val gastoInicial = salariosComAumento.somatoria()
-    //Acumulador: 2000.55
-    //Valor: 2500.00
-    // 2000.55 + 2500.00 == 4500.55
-    //Acumulador: 4500.55
-    //Valor: 5500.00
-    // 4500.55 + 5500.00 = 10000.55
-    //Acumulador: 10000.55
-    //Valor: 11000.00
-    //1000055 + 1100000 = 21000.55
-    //Gasto Inicial: 21000.55
+    /* Acumulador: 2000.55
+    Valor: 2500.00
+    2000.55 + 2500.00 == 4500.55
+    Acumulador: 4500.55
+    Valor: 5500.00
+    4500.55 + 5500.00 = 10000.55
+    Acumulador: 10000.55
+    Valor: 11000.00
+    1000055 + 1100000 = 21000.55
+    Gasto Inicial: 21000.55 */
     val meses = 6.toBigDecimal()  //Meses: 6
 
 
