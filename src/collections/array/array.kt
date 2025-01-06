@@ -97,8 +97,8 @@ fun generateArray() {
         if(idade < menorIdade) {
             menorIdade = idade
             println("Dentro do if a menor idade: ${menorIdade}")
-            //Dentro do if a menor idade: 25
-            //Dentro do if a menor idade: 19
+            /* Dentro do if a menor idade: 25
+            Dentro do if a menor idade: 19 */
         }
     }
 
@@ -378,7 +378,8 @@ fun generateArray() {
       utilizando o retorno da função somatória como gasto inicial:
 
 
-      fold() e reduce() executam operações de dobra e redução em cada grupo como uma coleção separada e retornam os resultados.
+      fold() e reduce() executam operações de dobra e redução em cada grupo como uma coleção separada e retornam os
+      resultados.
 
       fold é relativamente parecido com o reduce para fazer a somatoria, a diferença que o Fold recebe um valor inicial,
       , no fold pode colocar o gastoInicial que é o gasto com o primeiro mês */
