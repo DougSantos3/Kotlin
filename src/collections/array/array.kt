@@ -118,15 +118,15 @@ fun generateArray() {
     for(indice in salarios.indices) {
         salarios[indice] = salarios[indice] * aumento
         println(salarios[indice])
-        //1650.5500000000002
-        //2530.0
-        //550.0
-        //8800.0
-        //11000.0
+        /* 1650.5500000000002
+        2530.0
+        550.0
+        8800.0
+        11000.0 */
 
     }
 
-    //acima salvou no array valor + 10%  e abaixo vai pegar o valor do array e vai somar + 10%, por isso o valor é maior
+    /* acima salvou no array valor + 10%  e abaixo vai pegar o valor do array e vai somar + 10%, por isso o valor é maior */
     salarios.forEachIndexed { indice, salario ->
         salarios[indice] = salario * aumento
         println("Salario no forEachIndexed: ${salarios[indice]}")
@@ -153,9 +153,9 @@ fun generateArray() {
         if(salario in base..topo) {
             contador++
             println(salario)
-            //1500.5
-            //2300.0
-            //3000.0
+            /* 1500.5
+            2300.0
+            3000.0 */
         }
     }
 
@@ -168,7 +168,7 @@ fun generateArray() {
     val base = 1500.0
     val topo = 4000.0
 
-    //código simplificado
+    /* código simplificado */
     val contador = salarios.count { it in base..topo}
     println("Quantidade de salarios que estão entre a base e o topo: ${contador}") //Quantidade de salarios que estão entre a base e o topo: 3
 
