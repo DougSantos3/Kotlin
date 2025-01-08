@@ -198,8 +198,8 @@ fun generateArray() {
 
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
 
-    val todosMaiores: Boolean = idades.all { it >= 18 } //all == seria o && - Todos Maiores: true. Se existir um menor volta false
-    val existeMenor: Boolean = idades.any { it < 18 } //any == seria || - Existe Menor: false. Se existir um menor apenas volta true
+    val todosMaiores: Boolean = idades.all { it >= 18 } /* all == seria o && - Todos Maiores: true. Se existir um menor volta false */
+    val existeMenor: Boolean = idades.any { it < 18 } /* any == seria || - Existe Menor: false. Se existir um menor apenas volta true */
 
 
     /* Ninith
@@ -210,8 +210,8 @@ fun generateArray() {
 
     val idades: IntArray = intArrayOf(17, 7,25, 19, 33, 20, 55, 40)
 
-    val maiores: List<Int> = idades.filter { it >= 18 } //Maiores: [25, 19, 33, 20, 55, 40]
-    val menores: List<Int> = idades.filter { it < 18 } //Menores: [17, 7]
+    val maiores: List<Int> = idades.filter { it >= 18 } /* Maiores: [25, 19, 33, 20, 55, 40] */
+    val menores: List<Int> = idades.filter { it < 18 } /* Menores: [17, 7] */
     println("maiores: ${maiores}")
     println("menores: ${menores}")
 
@@ -227,8 +227,8 @@ fun generateArray() {
 
     val idades: IntArray = intArrayOf(17, 7,25, 19, 33, 20, 55, 40)
 
-    val contemDez: Boolean = idades.contains(10) // false
-    val idade: Int? = idades.find { it == 10 } //null
+    val contemDez: Boolean = idades.contains(10) /* false */
+    val idade: Int? = idades.find { it == 10 } /* null */
     println("Contem Dez: ${contemDez}")
     println("Idade: ${idade}")
 
@@ -245,7 +245,7 @@ fun generateArray() {
         }
     }
 
-    //Com essa função pronta, nós fomos capazes de criar nosso array de salários
+    /* Com essa função pronta, nós fomos capazes de criar nosso array de salários */
     val salarios = bigDecimalArrayOf("1500.55", "2000.00", "5000.00", "10000.00")
 
 
@@ -283,7 +283,7 @@ fun generateArray() {
 
     val notas = intArrayOf(7, 5, 8, 9)
 
-    //Essas funções, exatamente nessa ordem, vão produzir o resultado desejado.
+    /* Essas funções, exatamente nessa ordem, vão produzir o resultado desejado. */
     val media = notas.sorted().takeLast(3).average()
 
 
@@ -308,26 +308,26 @@ fun generateArray() {
 
     fun Array<BigDecimal>.somatoria(): BigDecimal {
         return this.reduce { acumulador, valor ->
-            acumulador + valor
-            //Acumulador: 2000.55
-            //Valor: 2500.00
-            // 2000.55 + 2500.00 == 4500.55
-            //Acumulador: 4500.55
-            //Valor: 5500.00
-            // 4500.55 + 5500.00 = 10000.55
-            //Acumulador: 10000.55
-            //Valor: 11000.00
-            //1000055 + 1100000 = 21000.55
-            //Gasto Inicial: 21000.55
-            //second
-            //Acumulador: 2000.55
-            //Valor: 2500.00
-            // 2000.55 + 2500.00 == 4500.55
-            //Acumulador: 4500.55
-            //Valor: 5500.00
-            // 4500.55 + 5500.00 = 10000.55
-            //Acumulador: 10000.55
-            //retornar o 10000.55
+            /* acumulador + valor
+            Acumulador: 2000.55
+            Valor: 2500.00
+             2000.55 + 2500.00 == 4500.55
+            Acumulador: 4500.55
+            Valor: 5500.00
+             4500.55 + 5500.00 = 10000.55
+            Acumulador: 10000.55
+            Valor: 11000.00
+            1000055 + 1100000 = 21000.55
+            Gasto Inicial: 21000.55
+            second
+            Acumulador: 2000.55
+            Valor: 2500.00
+             2000.55 + 2500.00 == 4500.55
+            Acumulador: 4500.55
+            Valor: 5500.00
+             4500.55 + 5500.00 = 10000.55
+            Acumulador: 10000.55
+            retornar o 10000.55 */
         }
     }
 
@@ -343,15 +343,15 @@ fun generateArray() {
     val salarios = bigDecimalArrayOf("1500.55", "2000.00", "5000.00", "10000.00")
     val aumento = "1.1".toBigDecimal()
 
-    println("Salarios: ${salarios.contentToString()}") //Salarios: [1500.55, 2000.00, 5000.00, 10000.00]
-    println("Aumento: ${aumento}") //Aumento: 1.1
+    println("Salarios: ${salarios.contentToString()}") /* Salarios: [1500.55, 2000.00, 5000.00, 10000.00] */
+    println("Aumento: ${aumento}") /* Aumento: 1.1 */
 
 
     fun calculaAumentoRelativo(salario: BigDecimal, aumento: BigDecimal) : BigDecimal {
         return if (salario < "5000".toBigDecimal()) {
             salario + "500".toBigDecimal()
         } else {
-            (salario * aumento).setScale(2, RoundingMode.UP) //2 números após a virgula e up é arredonda para cima
+            (salario * aumento).setScale(2, RoundingMode.UP) /* 2 números após a virgula e up é arredonda para cima */
         }
     }
 
