@@ -72,7 +72,7 @@ fun generateArray() {
     val idades: IntArray = intArrayOf(25, 19, 33, 20)
 
     var maiorIdade = Int.MIN_VALUE
-    println("Min Value: ${maiorIdade}") //-Min Value: -2147483648
+    println("Min Value: ${maiorIdade}") /* -Min Value: -2147483648 */
 
     for (idade in idades) {
         if(maiorIdade < idade) {
@@ -91,7 +91,7 @@ fun generateArray() {
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
 
     var menorIdade = Int.MAX_VALUE
-    println("Max Value: ${menorIdade}") //Max Value: 2147483647
+    println("Max Value: ${menorIdade}") /* Max Value: 2147483647 */
 
     idades.forEach { idade ->
         if(idade < menorIdade) {
@@ -170,7 +170,7 @@ fun generateArray() {
 
     /* código simplificado */
     val contador = salarios.count { it in base..topo}
-    println("Quantidade de salarios que estão entre a base e o topo: ${contador}") //Quantidade de salarios que estão entre a base e o topo: 3
+    println("Quantidade de salarios que estão entre a base e o topo: ${contador}") /* Quantidade de salarios que estão entre a base e o topo: 3 */
 
 
     Seventh
@@ -182,11 +182,11 @@ fun generateArray() {
 
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
 
-    val maiorIdade : Int = idades.max() // Maior idade: 55
+    val maiorIdade : Int = idades.max() /* Maior idade: 55 */
 
-    val menorIdade: Int = idades.min() // Menor idade: 19
+    val menorIdade: Int = idades.min() /* Menor idade: 19 */
 
-    val media: Double = idades.average() //Media: 32.0
+    val media: Double = idades.average() /* Media: 32.0 */
 
 
     /* Eighth:
@@ -217,7 +217,7 @@ fun generateArray() {
 
     /* Essa função, no entanto, retorna uma lista. Caso queira continuar trabalhando com IntArray, utilize a função
      toIntArray(): Que vai retornar o hash ao invez do valor */
-    val outrosMenores: IntArray = idades.filter { it < 18}.toIntArray() //Menores: [I@7ef20235
+    val outrosMenores: IntArray = idades.filter { it < 18}.toIntArray() /* Menores: [I@7ef20235 */
     println("Menores: ${outrosMenores}")
 
 
@@ -258,7 +258,7 @@ fun generateArray() {
         return if (salario < "5000".toBigDecimal()) {
             salario + "500".toBigDecimal()
         } else {
-            (salario * aumento).setScale(2, RoundingMode.UP) //2 números após a virgula e up é arredonda para cima
+            (salario * aumento).setScale(2, RoundingMode.UP) /* 2 números após a virgula e up é arredonda para cima */
         }
     }
 
@@ -273,7 +273,7 @@ fun generateArray() {
     [Ljava.math.BigDecimal;@87aac27 ou abaixo [Ljava.math.BigDecimal;@6ce253f1 */
     println("salarios: ${salarios.contentToString()}") //salarios: [1500.55, 2000.00, 5000.00, 10000.00]
     println("Aumento ${aumento}") //Aumento 1.1
-    println("Salarios com aumento: ${salariosComAumento.contentToString()}") //Salarios com aumento: [2000.55, 2500.00, 5500.00, 11000.00]
+    println("Salarios com aumento: ${salariosComAumento.contentToString()}") /* Salarios com aumento: [2000.55, 2500.00, 5500.00, 11000.00] */
 
 
     /* Twelveth:
@@ -358,7 +358,7 @@ fun generateArray() {
 
     val salariosComAumento: Array<BigDecimal> = salarios.map { salario -> calculaAumentoRelativo(salario, aumento) }.toTypedArray()
 
-    println("salarios Com Aumento: ${salariosComAumento.contentToString()}") //salarios Com Aumento: [2000.55, 2500.00, 5500.00, 11000.00]
+    println("salarios Com Aumento: ${salariosComAumento.contentToString()}") /* salarios Com Aumento: [2000.55, 2500.00, 5500.00, 11000.00] */
 
     val gastoInicial = salariosComAumento.somatoria()
     /* Acumulador: 2000.55
@@ -371,7 +371,7 @@ fun generateArray() {
     Valor: 11000.00
     1000055 + 1100000 = 21000.55
     Gasto Inicial: 21000.55 */
-    val meses = 6.toBigDecimal()  //Meses: 6
+    val meses = 6.toBigDecimal()  /* Meses: 6 */
 
 
     /* Depois utilizamos a função fold() para calcular a soma dos salários com aumento pelos próximos 6 meses,
@@ -387,9 +387,9 @@ fun generateArray() {
         acumulador + (salario * meses).setScale(2, RoundingMode.UP)
     }
 
-    println("Gasto Inicial: ${gastoInicial}") //Gasto Inicial: 21000.55
-    println("Meses: ${meses}") //Meses: 6
-    println("Gasto Total: ${gastoTotal}") //Gasto Total: 147003.85
+    println("Gasto Inicial: ${gastoInicial}") /* Gasto Inicial: 21000.55 */
+    println("Meses: ${meses}") /* Meses: 6 */
+    println("Gasto Total: ${gastoTotal}") /* Gasto Total: 147003.85 */
 
     /* Criamos, ainda, uma última extension function para os arrays do tipo BigDecimal para calcular a média simples
     entre os valores do array: */
@@ -402,9 +402,9 @@ fun generateArray() {
         }
     }
 
-    //E compondo algumas funções diferentes, nós calculamos a média dos 3 maiores e dos 3 menores salários:
+    /* E compondo algumas funções diferentes, nós calculamos a média dos 3 maiores e dos 3 menores salários: */
     val media = salariosComAumento.sorted().take(3).toTypedArray().media()
-    println("Media: ${media}") //Media: 3333.52
+    println("Media: ${media}") /* Media: 3333.52 */
     /* Acumulador: 2000.55
     Valor: 2500.00
     2000.55 + 2500.00 == 4500.55
