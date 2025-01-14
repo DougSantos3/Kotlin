@@ -355,7 +355,6 @@ fun generateArray() {
         }
     }
 
-
     val salariosComAumento: Array<BigDecimal> = salarios.map { salario -> calculaAumentoRelativo(salario, aumento) }.toTypedArray()
 
     println("salarios Com Aumento: ${salariosComAumento.contentToString()}") /* salarios Com Aumento: [2000.55, 2500.00, 5500.00, 11000.00] */
@@ -373,10 +372,8 @@ fun generateArray() {
     Gasto Inicial: 21000.55 */
     val meses = 6.toBigDecimal()  /* Meses: 6 */
 
-
     /* Depois utilizamos a função fold() para calcular a soma dos salários com aumento pelos próximos 6 meses,
       utilizando o retorno da função somatória como gasto inicial:
-
 
       fold() e reduce() executam operações de dobra e redução em cada grupo como uma coleção separada e retornam os
       resultados.
@@ -393,7 +390,6 @@ fun generateArray() {
 
     /* Criamos, ainda, uma última extension function para os arrays do tipo BigDecimal para calcular a média simples
     entre os valores do array: */
-
     fun Array<BigDecimal>.media(): BigDecimal {
         return if(this.isEmpty()) {
             BigDecimal.ZERO
