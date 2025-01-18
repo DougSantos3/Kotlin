@@ -19,7 +19,6 @@ fun generateArray() {
 
     Aprendemos a criar variáveis do tipo inteiro e como compará-las utilizando uma estrutura de ifs
     aninhados: */
-
     val idade1 = 25
     val idade2 = 19
     val idade3 = 33
@@ -42,7 +41,6 @@ fun generateArray() {
     Em seguida vimos que utilizar variáveis comuns não é o ideal para fazer esse tipo de comparação. Um estrutura
     mais própria para essa tarefa seria a utilização de arrays. Então modificamos o código anterior para a nova
     versão: */
-
     val idades = IntArray(4)
     idades[0] = 25
     idades[1] = 19
@@ -68,7 +66,6 @@ fun generateArray() {
     aninhados. Vimos então que, para resolver o problema de ifs aninhados, precisamos utilizar uma estrutura de
     repetição para iterar por todos os elementos do array sem precisarmos descrever um por um, como exemplo de
     estrutura de repetição, utilizamos o laço for: */
-
     val idades: IntArray = intArrayOf(25, 19, 33, 20)
 
     var maiorIdade = Int.MIN_VALUE
@@ -87,7 +84,6 @@ fun generateArray() {
     adicionar mais uma idade no nosso array, não seria necessário alterar o algoritmo que identifica qual é a maior
     idade:
     Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array: */
-
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
 
     var menorIdade = Int.MAX_VALUE
@@ -110,7 +106,6 @@ fun generateArray() {
     arredondar sem usar o double, use o bigDecimal que é do java
     Depois disso, a gente viu como alterar arrays para adicionar 10% de aumento no salário dos funcionários de uma
     empresa: */
-
     val salarios: DoubleArray = doubleArrayOf(1500.50, 2300.0, 500.0, 8000.0, 10000.0)
 
     val aumento = 1.1
@@ -123,7 +118,6 @@ fun generateArray() {
         550.0
         8800.0
         11000.0 */
-
     }
 
     /* acima salvou no array valor + 10%  e abaixo vai pegar o valor do array e vai somar + 10%, por isso o valor é maior */
@@ -141,8 +135,6 @@ fun generateArray() {
     /* Fifty example:
     Nesta lição, nós aprendemos que podemos utilizar ranges para simplificar condições que visam identificar
     intervalos: */
-
-
     val salarios: DoubleArray = doubleArrayOf(1500.50, 2300.0, 500.0, 8000.0, 10000.0, 4000.1, 3000.0)
 
     val base = 1500.0
@@ -161,8 +153,6 @@ fun generateArray() {
 
     /* Sixty example:
     Utilizando funções agregadoras em conjunto com ranges, podemos simplificar esse código para: */
-
-
     val salarios: DoubleArray = doubleArrayOf(1500.50, 2300.0, 500.0, 8000.0, 10000.0, 4000.1, 3000.0)
 
     val base = 1500.0
@@ -173,13 +163,11 @@ fun generateArray() {
     println("Quantidade de salarios que estão entre a base e o topo: ${contador}") /* Quantidade de salarios que estão entre a base e o topo: 3 */
 
 
-    Seventh
+    /* Seventh
     Aprendemos, então, a utilizar outras funções agregadoras e
     de processamento de coleções, como uma forma mais concisa de encontrar o maior valor dentro de um array:
     val maiorIdade: Int = idades.max()
-    E também o menor e a média:
-
-
+    E também o menor e a média: */
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
 
     val maiorIdade : Int = idades.max() /* Maior idade: 55 */
@@ -192,10 +180,6 @@ fun generateArray() {
     /* Eighth:
     Para identificar se todos ou qualquer um dos elementos de uma lista se adequam a determinada condição, utilizamos
     respectivamente as funções all e any: */
-
-
-
-
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
 
     val todosMaiores: Boolean = idades.all { it >= 18 } /* all == seria o && - Todos Maiores: true. Se existir um menor volta false */
@@ -204,10 +188,6 @@ fun generateArray() {
 
     /* Ninith
     Vimos como filtrar valores utilizando a função filter: */
-
-
-
-
     val idades: IntArray = intArrayOf(17, 7,25, 19, 33, 20, 55, 40)
 
     val maiores: List<Int> = idades.filter { it >= 18 } /* Maiores: [25, 19, 33, 20, 55, 40] */
@@ -224,7 +204,6 @@ fun generateArray() {
     /* Tenth
     Para verificar se um valor específico está contido no array, ou fazer uma busca por esse valor, vimos como usar,
     respectivamente, as funções contains e find: */
-
     val idades: IntArray = intArrayOf(17, 7,25, 19, 33, 20, 55, 40)
 
     val contemDez: Boolean = idades.contains(10) /* false */
@@ -280,7 +259,6 @@ fun generateArray() {
     Numa competição de saltos ornamentais, cada competidor recebe 4 notas dos jurados. A menor nota é descartada e
     depois é tirada a média simples das 3 notas restantes.
     Considerando o seguinte array com as notas de um competidor: */
-
     val notas = intArrayOf(7, 5, 8, 9)
 
     /* Essas funções, exatamente nessa ordem, vão produzir o resultado desejado. */
@@ -305,7 +283,6 @@ fun generateArray() {
 
     Nesta aula, para calcular a soma do array de salários, criamos uma extension function para os arrays do tipo
     BigDecimal, utilizando a função reduce: */
-
     fun Array<BigDecimal>.somatoria(): BigDecimal {
         return this.reduce { acumulador, valor ->
             /* acumulador + valor
