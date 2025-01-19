@@ -230,9 +230,6 @@ fun generateArray() {
 
     /* Depois, vimos como calcular um aumento relativo a cada salário, em que salários maiores que R$ 5000,00 recebem um
     aumento de 10% e salários menores recebem um aumento fixo de R$ 500,00: */
-
-
-
     fun calculaAumentoRelativo(salario: BigDecimal, aumento: BigDecimal) : BigDecimal {
         return if (salario < "5000".toBigDecimal()) {
             salario + "500".toBigDecimal()
@@ -270,7 +267,6 @@ fun generateArray() {
            Somatoria com Reduce
            Gasto total com Fold
            Compondo operações
-
 
     Função para saber quanto que o Patrão vai gastar com os funcionarios nesse mês e quanto ele vai gastar nos próximos
     6 mesês, depois do aumento dos valores que o funcionario vão receber
