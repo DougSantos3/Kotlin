@@ -247,8 +247,8 @@ fun generateArray() {
 
     /* contentToString é para imprimir o número no terminal se não ele imprimi apenas o hash
     [Ljava.math.BigDecimal;@87aac27 ou abaixo [Ljava.math.BigDecimal;@6ce253f1 */
-    println("salarios: ${salarios.contentToString()}") //salarios: [1500.55, 2000.00, 5000.00, 10000.00]
-    println("Aumento ${aumento}") //Aumento 1.1
+    println("salarios: ${salarios.contentToString()}") /* salarios: [1500.55, 2000.00, 5000.00, 10000.00] */
+    println("Aumento ${aumento}") /* Aumento 1.1 */
     println("Salarios com aumento: ${salariosComAumento.contentToString()}") /* Salarios com aumento: [2000.55, 2500.00, 5500.00, 11000.00] */
 
 
