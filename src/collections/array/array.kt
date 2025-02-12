@@ -17,11 +17,10 @@ fun generateArray() {
 
     Criar um algoritmo para mostrar quem é o funcionario mais velho em idade
 
-    Aprendemos a criar variáveis do tipo inteiro e como compará-las utilizando uma estrutura de ifs
-    aninhados: */
+    Sem array. Aprendemos a criar variáveis do tipo inteiro e como compará-las utilizando uma estrutura de ifs aninhados: */
     val idade1 = 25
     val idade2 = 19
-    val idade3 = 33
+    val idade3 = 34
     val idade4 = 20
 
     val maiorIdade = if (idade1 > idade2 && idade1 > idade3 && idade1 > idade4) {
@@ -37,14 +36,14 @@ fun generateArray() {
     println(maiorIdade)
 
 
-    /* Second Example:
+    /* Second Example: Agora usamos array
     Em seguida vimos que utilizar variáveis comuns não é o ideal para fazer esse tipo de comparação. Um estrutura
     mais própria para essa tarefa seria a utilização de arrays. Então modificamos o código anterior para a nova
     versão: */
     val idades = IntArray(4)
     idades[0] = 25
     idades[1] = 19
-    idades[2] = 33
+    idades[2] = 34
     idades[3] = 30
 
     val maiorIdade = if (idades[0] > idades[1] && idades[0] > idades[2] && idades[0] > idades[3]) {
