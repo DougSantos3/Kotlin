@@ -65,7 +65,7 @@ fun generateArray() {
     aninhados. Vimos então que, para resolver o problema de ifs aninhados, precisamos utilizar uma estrutura de
     repetição para iterar por todos os elementos do array sem precisarmos descrever um por um, como exemplo de
     estrutura de repetição, utilizamos o laço for: */
-    val idades: IntArray = intArrayOf(25, 19, 33, 20)
+    val idades: IntArray = intArrayOf(25, 19, 34, 20)
 
     var maiorIdade = Int.MIN_VALUE
     println("Min Value: ${maiorIdade}") /* -Min Value: -2147483648 */
