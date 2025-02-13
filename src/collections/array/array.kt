@@ -61,8 +61,12 @@ fun generateArray() {
     Essa é uma forma funcional de declarar um array de idades, mas existe uma forma mais simples e mais concisa de
     fazer a mesma coisa.
 
+    If aninhado: Um if dentro de outro if.
+    If encadeado: Vários if, else if e else usados de forma sequencial, sem que um if esteja diretamente dentro de
+    outro.
+
     Apesar de deixarmos o código um pouco mais dinâmico dessa forma, ainda não resolvemos o problema dos ifs
-    aninhados. Vimos então que, para resolver o problema de ifs aninhados, precisamos utilizar uma estrutura de
+    encadeado. Vimos então que, para resolver o problema de ifs aninhados, precisamos utilizar uma estrutura de
     repetição para iterar por todos os elementos do array sem precisarmos descrever um por um, como exemplo de
     estrutura de repetição, utilizamos o laço for: */
     val idades: IntArray = intArrayOf(25, 19, 34, 20)
