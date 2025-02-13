@@ -66,7 +66,7 @@ fun generateArray() {
     outro.
 
     Apesar de deixarmos o código um pouco mais dinâmico dessa forma, ainda não resolvemos o problema dos ifs
-    encadeado. Vimos então que, para resolver o problema de ifs aninhados, precisamos utilizar uma estrutura de
+    encadeado. Vimos então que, para resolver o problema, precisamos utilizar uma estrutura de
     repetição para iterar por todos os elementos do array sem precisarmos descrever um por um, como exemplo de
     estrutura de repetição, utilizamos o laço for: */
     val idades: IntArray = intArrayOf(25, 19, 34, 20)
@@ -79,7 +79,7 @@ fun generateArray() {
             maiorIdade = idade
             println("Dentro do if a maior idade: ${maiorIdade}")
             /* Dentro do if a maior idade: 25
-            Dentro do if a maior idade: 33 */
+            Dentro do if a maior idade: 34 */
         }
     }
 
