@@ -78,12 +78,11 @@ fun generateArray() {
         if(maiorIdade < idade) {
             maiorIdade = idade
             println("Dentro do if a maior idade: ${maiorIdade}")
-            /* Dentro do if a maior idade: 25
-            Dentro do if a maior idade: 34 */
+            /* Dentro do if a maior idade: 34 */
         }
     }
 
-    /* Dessa forma a gente conseguiu reduzir muito a complexidade do nosso sistema, de forma que, caso a gente precise
+    /* Dessa forma conseguimos reduzir muito a complexidade do nosso sistema, de forma que, caso a gente precise
     adicionar mais uma idade no nosso array, não seria necessário alterar o algoritmo que identifica qual é a maior
     idade:
     Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array: */
