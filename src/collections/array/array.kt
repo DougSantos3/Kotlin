@@ -95,8 +95,6 @@ fun generateArray() {
         if(idade < menorIdade) {
             menorIdade = idade
             println("Dentro do if a menor idade: ${menorIdade}")
-            /* Dentro do if a menor idade: 25
-            Dentro do if a menor idade: 19 */
         }
     }
 
