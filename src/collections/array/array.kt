@@ -86,7 +86,7 @@ fun generateArray() {
     adicionar mais uma idade no nosso array, não seria necessário alterar o algoritmo que identifica qual é a maior
     idade:
     Usando um algoritmo bem parecido, a gente conseguiu identificar também qual é a menor idade do array: */
-    val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
+    val idades: IntArray = intArrayOf(25, 19, 34, 20, 55, 40)
 
     var menorIdade = Int.MAX_VALUE
     println("Max Value: ${menorIdade}") /* Max Value: 2147483647 */
