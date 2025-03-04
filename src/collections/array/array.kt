@@ -99,13 +99,16 @@ fun generateArray() {
     }
 
     /* Fouth example:
-    Calcular 10% de aumento do salario de um funcionario na empresa
-    O patrão acha que os funcionarios tem que ter um aumento de 10% do salario mais caso o funcionario receba menos de
-    5000k que os 10% dará menos que 500 reias exemplo funcionario ganha 2000k 10% da 200,00 e não chega a 500,00 nesse
-    caso ele aumentaria para 500,00 e para quem ganha mais de 5000k vai ser 10% normal de bônus no seu salario. Precisa
-    arredondar sem usar o double, use o bigDecimal que é do java
-    Depois disso, a gente viu como alterar arrays para adicionar 10% de aumento no salário dos funcionários de uma
-    empresa: */
+    Calcular um aumento de 10% no salário de um funcionário da empresa.
+    O patrão decidiu que os funcionários devem receber um aumento de 10% sobre seus salários. No entanto, caso o
+    funcionário receba menos de R$5.000, e os 10% resultem em um valor inferior a R$500,00, o aumento será ajustado
+    para R$500,00.
+    Por exemplo, se um funcionário ganha R$2.000, um aumento de 10% resultaria em R$200,00, o que não atende ao mínimo
+    estabelecido. Nesse caso, o aumento será de R$500,00. Já para funcionários com salário superior a R$5.000, o
+    aumento será de 10% normalmente.
+    O cálculo deve ser feito utilizando BigDecimal (do Java) para evitar problemas de precisão, sem o uso de double.
+    Além disso, exploramos como modificar arrays para aplicar um aumento de 10% nos salários dos funcionários de uma
+    empresa. */
     val salarios: DoubleArray = doubleArrayOf(1500.50, 2300.0, 500.0, 8000.0, 10000.0)
 
     val aumento = 1.1
@@ -120,15 +123,16 @@ fun generateArray() {
         11000.0 */
     }
 
-    /* acima salvou no array valor + 10%  e abaixo vai pegar o valor do array e vai somar + 10%, por isso o valor é maior */
+    /* acima salvou no array valor + 10% e abaixo vai pegar o valor do array e vai somar + 10%, por isso o valor é
+    maior */
     salarios.forEachIndexed { indice, salario ->
         salarios[indice] = salario * aumento
         println("Salario no forEachIndexed: ${salarios[indice]}")
-        /*Salario no forEachIndexed: 1815.6050000000002
-          Salario no forEachIndexed: 2783.0
-          Salario no forEachIndexed: 605.0
-          Salario no forEachIndexed: 9680.0
-          Salario no forEachIndexed: 12100.000000000002 */
+        /* Salario no forEachIndexed: 1815.6050000000002
+           Salario no forEachIndexed: 2783.0
+           Salario no forEachIndexed: 605.0
+           Salario no forEachIndexed: 9680.0
+           Salario no forEachIndexed: 12100.000000000002 */
     }
 
 
