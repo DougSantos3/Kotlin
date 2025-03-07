@@ -123,7 +123,7 @@ fun generateArray() {
         11000.0 */
     }
 
-    /* acima salvou no array valor + 10% e abaixo vai pegar o valor do array e vai somar + 10%, por isso o valor é
+    /* Acima salvou no array valor + 10% e abaixo vai pegar o valor do array e vai somar + 10%, por isso o valor é
     maior */
     salarios.forEachIndexed { indice, salario ->
         salarios[indice] = salario * aumento
