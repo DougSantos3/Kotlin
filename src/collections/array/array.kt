@@ -149,9 +149,7 @@ fun generateArray() {
         if(salario in base..topo) {
             contador++
             println(salario)
-            /* 1500.5
-            2300.0
-            3000.0 */
+            /* 1500.5, 2300.0, 3000.0 */
         }
     }
 
