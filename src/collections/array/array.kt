@@ -165,7 +165,7 @@ fun generateArray() {
     println("Quantidade de salarios que estão entre a base e o topo: ${contador}") /* Quantidade de salarios que estão entre a base e o topo: 3 */
 
 
-    /* Seventh
+    /* Seventh example
     Aprendemos, então, a utilizar outras funções agregadoras e
     de processamento de coleções, como uma forma mais concisa de encontrar o maior valor dentro de um array:
     val maiorIdade: Int = idades.max()
