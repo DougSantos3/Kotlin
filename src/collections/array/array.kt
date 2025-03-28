@@ -179,7 +179,7 @@ fun generateArray() {
     val media: Double = idades.average() /* Media: 32.0 */
 
 
-    /* Eighth:
+    /* Eighth: example
     Para identificar se todos ou qualquer um dos elementos de uma lista se adequam a determinada condição, utilizamos
     respectivamente as funções all e any: */
     val idades: IntArray = intArrayOf(25, 19, 33, 20, 55, 40)
@@ -188,7 +188,7 @@ fun generateArray() {
     val existeMenor: Boolean = idades.any { it < 18 } /* any == seria || - Existe Menor: false. Se existir um menor apenas volta true */
 
 
-    /* Ninith
+    /* Ninith example
     Vimos como filtrar valores utilizando a função filter: */
     val idades: IntArray = intArrayOf(17, 7,25, 19, 33, 20, 55, 40)
 
@@ -203,7 +203,7 @@ fun generateArray() {
     println("Menores: ${outrosMenores}")
 
 
-    /* Tenth
+    /* Tenth example
     Para verificar se um valor específico está contido no array, ou fazer uma busca por esse valor, vimos como usar,
     respectivamente, as funções contains e find: */
     val idades: IntArray = intArrayOf(17, 7,25, 19, 33, 20, 55, 40)
@@ -214,7 +214,7 @@ fun generateArray() {
     println("Idade: ${idade}")
 
 
-    /* Eleventh:
+    /* Eleventh: example
     Para fazer o cálculo dos salários do tipo BigDecimal, primeiro criamos uma função para criar o array de BigDecimal:
 
     vararg podemos inserir varios parametros
@@ -254,7 +254,7 @@ fun generateArray() {
     println("Salarios com aumento: ${salariosComAumento.contentToString()}") /* Salarios com aumento: [2000.55, 2500.00, 5500.00, 11000.00] */
 
 
-    /* Twelveth:
+    /* Twelveth example
     Numa competição de saltos ornamentais, cada competidor recebe 4 notas dos jurados. A menor nota é descartada e
     depois é tirada a média simples das 3 notas restantes.
     Considerando o seguinte array com as notas de um competidor: */
@@ -264,7 +264,7 @@ fun generateArray() {
     val media = notas.sorted().takeLast(3).average()
 
 
-    /* Thirth:
+    /* Thirth example
     Operações compostas
            Somatoria com Reduce
            Gasto total com Fold
