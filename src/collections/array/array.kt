@@ -375,7 +375,8 @@ fun generateArray() {
 
     /* E compondo algumas funções diferentes, nós calculamos a média dos 3 maiores e dos 3 menores salários: */
     val media = salariosComAumento.sorted().take(3).toTypedArray().media()
-    println("Media: ${media}") /* Media: 3333.52 */
+    println("Media: ${media}")
+    /* Media: 3333.52
     /* Acumulador: 2000.55
     Valor: 2500.00
     2000.55 + 2500.00 == 4500.55
