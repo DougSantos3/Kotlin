@@ -377,7 +377,7 @@ fun generateArray() {
     val media = salariosComAumento.sorted().take(3).toTypedArray().media()
     println("Media: ${media}")
     /* Media: 3333.52
-    /* Acumulador: 2000.55
+     Acumulador: 2000.55
     Valor: 2500.00
     2000.55 + 2500.00 == 4500.55
     Acumulador: 4500.55
