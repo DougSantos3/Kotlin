@@ -5,19 +5,21 @@ import java.math.RoundingMode
 
 fun generateArray() {
     /* First example:
-    Construindo arrays/ Iterando por um array/ Alterando um elemento
+        Construindo arrays/ Iterando por um array/ Alterando um elemento
 
-    Funções de agregação
-      Ranges
-      operações agregadores
-      Array de objetos
-      Processando coleções
+        Funções de agregação
+          Ranges
+          operações agregadores
+          Array de objetos
+          Processando coleções
 
-    Array junta um grupo de objeto do mesmo tipo em um objeto só
+        Array junta um grupo de objeto do mesmo tipo em um objeto só
 
-    Criar um algoritmo para mostrar quem é o funcionario mais velho em idade
+        Criar um algoritmo para mostrar quem é o funcionario mais velho em idade
 
-    Sem array. Aprendemos a criar variáveis do tipo inteiro e como compará-las utilizando uma estrutura de ifs aninhados: */
+        Sem array. Aprendemos a criar variáveis do tipo inteiro e como compará-las utilizando uma estrutura de ifs
+        aninhados:
+    */
     val idade1 = 25
     val idade2 = 19
     val idade3 = 34
