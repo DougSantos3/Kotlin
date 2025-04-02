@@ -25,8 +25,8 @@ abstract class Abstract(
         destino.deposita(valor)
     }
 
-    /*  Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o contexto
-    de contas. No Bytebank pode existir um novo tipo de conta chamada de conta salário.
+    /*  Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o
+    contexto de contas. No Bytebank pode existir um novo tipo de conta chamada de conta salário.
 
     Esse tipo de conta costuma ter as mesmas informações e comportamentos que uma conta comum, porém com mais
     restrições. Ela não é possível usar o serviço de transferência.
@@ -43,9 +43,9 @@ abstract class Abstract(
     normal(modelo.ContaSalario:  modelo.Conta), como também uma conta que permite a transferência
     (modelo.ContaCorrente: modelo.ContaTransferivel)
 
-    Poderia utilizar uma interface, porém, dado que a implementação de transferir é a mesma entre as classes e o código
-    altera o saldo, não seria possível ter uma implementação padrão na interface e iria replicar o mesmo código em
-    ambas as contas que precisam transferir.
+    Poderia utilizar uma interface, porém, dado que a implementação de transferir é a mesma entre as classes e o
+    código altera o saldo, não seria possível ter uma implementação padrão na interface e iria replicar o mesmo código
+    em ambas as contas que precisam transferir.
     Porém, ao manter a herança esse comportamento não pode ser reutilizado por outras classes que fogem do contexto,
     ou seja, que não são contas.
 
