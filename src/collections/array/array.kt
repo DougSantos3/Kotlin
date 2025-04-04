@@ -164,7 +164,8 @@ fun generateArray() {
 
     /* código simplificado */
     val contador = salarios.count { it in base..topo}
-    println("Quantidade de salarios que estão entre a base e o topo: ${contador}") /* Quantidade de salarios que estão entre a base e o topo: 3 */
+    println("Quantidade de salarios que estão entre a base e o topo: ${contador}") /* Quantidade de salarios que estão
+     entre a base e o topo: 3 */
 
 
     /* Seventh example
