@@ -9,7 +9,6 @@ assim como se declararmos seus membros como abstratos, estes também não poder�
 Este é um recurso muito útil para garantir o funcionamento correto das estruturas de classes que temos e evitar
 comportamentos inadequados. Quando temos uma classe herdável que não queremos que seja instanciada, podemos substituir
 o open pelo abstract e assim manter o comportamento desejado. */
-
 abstract class Abstract(
     titular: Cliente,
     numeroDeConta: Int
@@ -25,7 +24,7 @@ abstract class Abstract(
         destino.deposita(valor)
     }
 
-    /*  Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o
+    /* Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o
     contexto de contas. No Bytebank pode existir um novo tipo de conta chamada de conta salário.
 
     Esse tipo de conta costuma ter as mesmas informações e comportamentos que uma conta comum, porém com mais
