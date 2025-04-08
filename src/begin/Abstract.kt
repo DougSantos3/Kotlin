@@ -9,7 +9,7 @@ assim como se declararmos seus membros como abstratos, estes também não poder�
 Este é um recurso muito útil para garantir o funcionamento correto das estruturas de classes que temos e evitar
 comportamentos inadequados. Quando temos uma classe herdável que não queremos que seja instanciada, podemos substituir
 o open pelo abstract e assim manter o comportamento desejado. */
-abstract class Abstract(
+abstract class Conta(
     titular: Cliente,
     numeroDeConta: Int
 ) : Metodo_Estatico_Companion_Object(
