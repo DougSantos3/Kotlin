@@ -1,14 +1,13 @@
-// Update driver no android
+/* Update driver no android */
   appium driver update uiautomator2 --unsafe
 
 
-//Update driver do ios
+/* Update driver do ios */
   appium driver update xcuitest --unsafe
 
 
-// Update appium
+/* Update appium */
     npm i --location=global appium
-    /* Step 1: Roda no terminal appium
-       Step 2: Roda o appium inspector(consulta se o mobile está no json representation e veja se tem o apk)
-       Step 3: Vai dentro do código e da um play no teste que deseja
-    */
+/* Step 1: Roda no terminal appium
+   Step 2: Roda o appium inspector(consulta se o mobile está no json representation e veja se tem o apk)
+   Step 3: Vai dentro do código e da um play no teste que deseja */
