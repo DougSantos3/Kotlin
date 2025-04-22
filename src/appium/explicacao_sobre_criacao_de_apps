@@ -1,6 +1,6 @@
 Tem 3 jeitos de criar uma aplicação app:
 
-    Nativo: Kotlin(java), objective c(swift), flutter(nativo e multiplataforma: tv, celular, watch e etc)
+    Nativo: Kotlin(java), Swift(objective c), flutter(nativo e multiplataforma: tv, celular, watch e etc)
 
     Híbrido: criado com código web porém compila para app = Cordova
 
