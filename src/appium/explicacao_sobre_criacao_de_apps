@@ -1,7 +1,7 @@
 Tem 3 jeitos de criar uma aplicação app:
 
     . Nativo: Kotlin(Java), Swift(Objective C), Flutter(Nativo e Multiplataforma: tv, celular, watch e etc).
-    . Web(MSite): Cria para web e é aberto pelo browser como o MSite com reactjs que fica responsivo.
+    . Web(MSite): ReactJS - Cria para web e é aberto pelo browser como o MSite que fica responsivo.
     . Híbrido: Criado com código web porém compila para app = Cordova, Titanium
 
 Appium ou roda com nativo apenas ou com flutter, com os 2 exemplo login nativo e outra tela flutter, a
