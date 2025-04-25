@@ -3,8 +3,8 @@ package br.com.vraptor.bitBank.begin
 import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
-/* Ao criar uma classe abstract, informamos que ela passará a ser abstrata e não poderá ser instanciada,
-assim como se declararmos seus membros como abstratos, estes também não poderão ser implementados.
+/* Ao criar uma classe abstract, informamos que ela passará a ser abstrata e não poderá ser instanciada, assim como se
+declararmos seus membros como abstratos, estes também não poderão ser implementados.
 
 Este é um recurso muito útil para garantir o funcionamento correto das estruturas de classes que temos e evitar
 comportamentos inadequados. Quando temos uma classe herdável que não queremos que seja instanciada, podemos substituir
