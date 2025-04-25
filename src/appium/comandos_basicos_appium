@@ -5,12 +5,14 @@
 */
 
 
-/* Update driver no android */
+/* Install Update driver no android */
+  appium driver install uiautomator2
   appium driver update uiautomator2 --unsafe
 
 
-/* Update driver do ios */
-  appium driver update xcuitest --unsafe
+/* Install and Update driver do ios */
+   appium driver install xcuitest
+   appium driver update xcuitest --unsafe
 
 
 /* Update appium */
