@@ -33,7 +33,6 @@ abstract class Conta(
     Considerando esse detalhe, aceite o desafio e crie a conta salário que tem tudo que uma conta tem, com exceção do
     comportamento de transferir. Nesta implementação, mantenha a mesma técnica de polimorfismo na transferência para
     contas que precisam desse comportamento (corrente e poupança).
-
     Para testar o código, tente realizar a transferência com a conta salário e confira se apresenta um problema de
     compilação.
 
