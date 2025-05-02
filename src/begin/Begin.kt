@@ -5,12 +5,10 @@ class Begin {
     /* var ou val significa que vai ser criada uma nova variável e sem ele, significa que está usando os atributos de
     outro e não está criando.
 
-
     Heranças
     Vimos também que para tornar uma classe herdável é preciso marcá-la com a palavra-chave open porque por padrão,
     todas as classes criadas no Kotlin são automaticamente final, não podendo assim ser herdadas. A marcação final nas
     classes fica implícita e não precisa ser escrita. Para sobrescrever o metodo precisa inserir o open nele.
-
 
     Data class
     Traz umas facilidades para a gente, porém ele precisa ter no seu constructor os atributos criados ali, e o tipo
@@ -18,7 +16,6 @@ class Begin {
     essa herança.
 
     Data class ele automaticamente tem o método toString que imprime os atributos da classe.
-
 
     Tipos primitivos
     Long: 64-92233720368547758089223372036854775807
