@@ -30,7 +30,7 @@ class Begin {
     string
 
 
-    Tipos primitivos quando um é atribuido a outro ele passa uma cópia e não a referencia
+    Tipos primitivos quando um é atribuido a outro ele passa uma cópia e não a referencia */
 
     val numeroX = 10
     val numeroY = numeroX
@@ -39,7 +39,7 @@ class Begin {
     println(numeroX)  // 10
     println(numeroY)  // 11
 
-    //agora passar por referência
+    // Agora passar por referência
 
     val contaJoao = Conta()
     contaJoao.titular = “João“
@@ -49,10 +49,10 @@ class Begin {
     println(“Titular conta Joao: ${contaJoao.titular}“)
     println(“Titular conta Maria: ${contaMaria.titular}“)
 
-    Ambos imprimem  Maria
+    /* Ambos imprimem  Maria
     ele aponta para o mesmo, primeiro foi escrito Joao depois mudou para Maria
-    acima sempre é uma estancia se você realmente quizer um novo objeto precisar estanciar
+    acima sempre é uma estancia se você realmente quizer um novo objeto precisar estanciar */
 
     val contaJoao = Conta()
-    val contaMaria = Conta() */
+    val contaMaria = Conta()
 }
