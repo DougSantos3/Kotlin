@@ -29,7 +29,6 @@ class Begin {
     Boolean: true or false
     string
 
-
     Tipos primitivos quando um é atribuido a outro ele passa uma cópia e não a referencia */
 
     val numeroX = 10
