@@ -5,7 +5,7 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
     /* Ao criar uma classe abstract, indicamos que ela é abstrata e, portanto, não pode ser instanciada diretamente.
     Da mesma forma, ao declararmos seus membros (como métodos) como abstratos, eles também não podem ser implementados
-    nessa classe, apenas nas classes que a herdarem, onde deverão ser sobrescritos.
+    nessa classe Abstrata, apenas nas classes que a herdarem, onde deverão ser sobrescritos.
 
     Esse recurso é muito útil para garantir a correta estruturação das hierarquias de classes e evitar comportamentos
     indesejados. Quando temos uma classe que deve ser herdada, mas não deve ser instanciada diretamente, podemos
