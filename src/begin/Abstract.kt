@@ -8,7 +8,7 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     nessa classe Abstrata, apenas nas classes que a herdarem(subclasses), onde deverão ser sobrescritos.
 
     Quando temos uma classe que deve ser herdada, mas não deve ser instanciada diretamente, podemos
-    substituí-la de open para abstract, assegurando que o comportamento seja mantido conforme o esperado.*/
+    substituí-la de open para abstract, assegurando que o comportamento seja mantido conforme o esperado. */
 abstract class Conta(
     titular: Cliente,
     numeroDeConta: Int
