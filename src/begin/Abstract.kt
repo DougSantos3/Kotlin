@@ -25,7 +25,7 @@ abstract class Conta(
     }
 
     /* Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o
-    contexto de contas. No Bytebank pode existir um novo tipo de conta chamada de conta salário.
+    contexto de contas. No Bytebank pode existir um novo tipo de conta chamada salário.
 
     Esse tipo de conta costuma ter as mesmas informações e comportamentos que uma conta comum, porém com mais
     restrições. Ela não é possível usar o serviço de transferência.
