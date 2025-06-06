@@ -30,7 +30,7 @@ abstract class Conta(
     Esse tipo de conta costuma ter as mesmas informações e comportamentos que uma conta comum, porém com mais
     restrições. Ela não é possível usar o serviço de transferência.
 
-    Considerando esse detalhes, aceite o desafio e crie a conta salário que tem tudo que uma conta tem, com exceção do
+    Considerando esse detalhes, crie a conta salário que tem tudo que uma conta tem, com exceção do
     comportamento de transferir. Nesta implementação, mantenha a mesma técnica de polimorfismo na transferência para
     contas que precisam desse comportamento(corrente e poupança).
     Para testar o código, tente realizar a transferência com a conta salário e confira se apresenta um problema de
