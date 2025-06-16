@@ -36,7 +36,7 @@ abstract class Conta(
     Para testar o código, tente realizar a transferência com a conta salário e confira se apresenta um problema de
     compilação.
 
-    Basicamente, foi utilizada a técnica de herança para mais de uma classe, dessa forma, uma conta pode ser uma conta
+    Foi utilizada a técnica de herança para mais de uma classe, dessa forma, uma conta pode ser uma conta
     normal(modelo.ContaSalario:  modelo.Conta), como também uma conta que permite a transferência
     (modelo.ContaCorrente: modelo.ContaTransferivel).
 
