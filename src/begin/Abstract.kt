@@ -7,6 +7,32 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     Da mesma forma, ao declararmos seus membros (como métodos) abstratos, eles também não podem ser implementados
     nessa classe Abstrata, apenas nas classes que a herdarem(subclasses), onde deverão ser sobrescritas.
 
+    Uma classe abstrata serve como base, e as classes que a estendem herdam seus métodos e propriedades
+    (inclusive abstratos, que devem ser implementados).
+
+    Sim, uma classe abstrata pode ter métodos concretos (ou seja, métodos com implementação).
+
+    Ela serve como uma base comum que pode fornecer comportamento padrão e também métodos abstratos (sem implementação)
+    que as subclasses devem implementar.
+
+    Exemplo em Kotlin:
+
+    abstract class Animal {
+    fun respirar() { // método concreto
+        println("Respirando...")
+    }
+
+        abstract fun emitirSom() // método abstrato
+    }
+
+    class Cachorro : Animal() {
+        override fun emitirSom() {
+            println("Latindo")
+        }
+    }
+
+    Nesse exemplo, respirar() já vem pronto, e emitirSom() precisa ser implementado pela subclasse.
+
     Quando temos uma classe que deve ser herdada, mas não deve ser instanciada diretamente, podemos
     substituí-la de open para abstract, assegurando que o comportamento seja mantido conforme o esperado. */
 abstract class Conta(
