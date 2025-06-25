@@ -3,14 +3,10 @@ package br.com.vraptor.bitBank.begin
 import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
-    /* Ao criar uma classe abstract, indicamos que ela é abstrata e, portanto, não pode ser instanciada diretamente.
-    Da mesma forma, ao declararmos seus membros (como métodos) abstratos, eles também não podem ser implementados
-    nessa classe Abstrata, apenas nas classes que a herdarem(subclasses), onde deverão ser sobrescritas.
-
-    Uma classe abstrata serve como base, e as classes que a estendem herdam seus métodos e propriedades
+    /* Uma classe abstrata serve como base, e as classes que a estendem herdam seus métodos e propriedades
     (inclusive abstratos, que devem ser implementados).
 
-    Sim, uma classe abstrata pode ter métodos concretos (ou seja, métodos com implementação).
+    A classe abstrata pode ter métodos concretos (ou seja, métodos com implementação).
 
     Ela serve como uma base comum que pode fornecer comportamento padrão e também métodos abstratos (sem implementação)
     que as subclasses devem implementar.
