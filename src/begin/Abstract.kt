@@ -9,18 +9,17 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     A classe abstrata pode ter métodos concretos (ou seja, métodos com implementação).
 
     Ela serve como uma base comum que pode fornecer comportamento padrão e também métodos abstratos (sem implementação)
-    que as subclasses devem implementar.
-
-    Exemplo em Kotlin:
-
-    */
+    que as subclasses devem implementar. */
 
     abstract class Animal {
-    fun respirar() { // método concreto
+
+    // método concreto
+    fun respirar() {
         println("Respirando...")
     }
 
-        abstract fun emitirSom() // método abstrato
+        // método abstrato
+        abstract fun emitirSom()
     }
 
     class Cachorro : Animal() {
