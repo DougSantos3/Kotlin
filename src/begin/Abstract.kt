@@ -5,9 +5,7 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
     /* Uma classe abstrata serve como base, e as classes que a estendem herdam seus métodos e propriedades
     (inclusive abstratos, que devem ser implementados).
-
     A classe abstrata pode ter métodos concretos (ou seja, métodos com implementação).
-
     Ela serve como uma base comum que pode fornecer comportamento padrão e também métodos abstratos (sem implementação)
     que as subclasses devem implementar. */
 
