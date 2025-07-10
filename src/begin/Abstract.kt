@@ -10,12 +10,12 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     que as subclasses devem implementar. */
     abstract class Animal {
 
-    // método concreto
+    /* método concreto */
     fun respirar() {
         println("Respirando...")
     }
 
-        // método abstrato
+        /* método abstrato */
         abstract fun emitirSom()
     }
 
@@ -25,7 +25,7 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
         }
     }
 
-    respirar() // já vem pronto, e emitirSom() precisa ser implementado pela subclasse.
+    respirar() /* já vem pronto, e emitirSom() precisa ser implementado pela subclasse. */
 
     /* Quando temos uma classe que deve ser herdada, mas não deve ser instanciada diretamente, podemos substituí-la de
     open para abstract, assegurando que o comportamento seja mantido conforme o esperado. */
