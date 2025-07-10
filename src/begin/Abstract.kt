@@ -43,17 +43,15 @@ abstract class Conta(
         saldo -= valor
         destino.deposita(valor)
     }
-        //stop
+
     /* Utilizamos as interfaces no contexto de funcionários, porém, podemos também estender o exemplos para o contexto
-    de contas.
+    de contas salario.
 
-    No Bytebank pode existir um novo tipo de conta chamada salário.
     Esse tipo de conta costuma ter as mesmas informações e comportamentos que uma conta comum, porém com mais
-    restrições. Ela não é possível usar o serviço de transferência.
+    restrições. Não é possível usar o serviço de transferência.
 
-    Considerando esse detalhes, crie a conta salário que tem tudo que uma conta tem, com exceção do comportamento de
-    transferir. Nesta implementação, mantenha a mesma técnica de polimorfismo na transferência para contas que precisam
-    desse comportamento(corrente e poupança).
+    Nesta  implementação, mantenha a mesma técnica de polimorfismo na transferência para contas que precisam desse
+    comportamento(corrente e poupança).
     Para testar o código, tente realizar a transferência com a conta salário e confira se apresenta um problema de
     compilação.
 
