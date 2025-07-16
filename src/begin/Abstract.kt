@@ -66,5 +66,5 @@ abstract class Conta(
     ou seja, que não são contas.
 
     Você pode perceber que ambas as abordagens (via herança ou interface) são válidas, o mais importante é saber as
-    vantagens e desvantagens e tomar a decisão que atende melhor a regra de negócio. */
+    vantagens e desvantagens e decidir qual a melhor para a regra de negócio. */
 }
