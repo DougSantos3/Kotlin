@@ -15,8 +15,8 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
         println("Respirando...")
     }
 
-        /* método abstrato */
-        abstract fun emitirSom()
+    /* método abstrato */
+    abstract fun emitirSom()
     }
 
     class Cachorro : Animal() {
