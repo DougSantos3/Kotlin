@@ -10,13 +10,14 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     que as subclasses devem implementar. */
     abstract class Animal {
 
-    /* método concreto */
-    fun respirar() {
-        println("Respirando...")
-    }
+        /* método concreto */
+        fun respirar() {
+            println("Respirando...")
+        }
 
-    /* método abstrato */
-    abstract fun emitirSom()
+        /* método abstrato */
+        abstract fun emitirSom()
+
     }
 
     class Cachorro : Animal() {
