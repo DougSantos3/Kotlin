@@ -4,9 +4,8 @@ import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
     /* Uma classe abstrata serve como base, e as classes que a estendem herdam seus métodos e propriedades(inclusive
-    abstratos, que devem ser implementados).
-    Fornecem métodos com implementação comportamento padrão(metodos concretos) e também métodos abstratos(sem
-    implementação) que as subclasses devem implementar. */
+    abstratos, que devem ser implementados) e  métodos com implementação e comportamento padrão(metodos concretos)
+    que as subclasses não precisam implementar mais podem sobrescreve caso queiram. */
     abstract class Animal {
 
         /* método concreto */
