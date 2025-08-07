@@ -3,9 +3,32 @@ package br.com.vraptor.bitBank.begin
 import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
-    /* Uma classe abstrata serve como base para outras classes, fornecendo tanto propriedades e métodos abstratos, que
-    devem ser implementados pelas subclasses, quanto métodos concretos, com comportamento padrão, que podem ser
-    utilizados diretamente ou sobrescritos, se necessário. */
+    /* Uma classe abstrata serve como base para outras classes, fornecendo tanto propriedades(atributos) e métodos
+    abstratos, que devem ser implementados pelas subclasses, quanto métodos concretos, com comportamento padrão, que
+    podem ser utilizados diretamente ou sobrescritos, se necessário. Um atributo abstrato é como uma "promessa" feita
+    em uma classe abstrata ou interface de que uma propriedade ou campo vai existir, mas quem vai realmente definir seu
+    valor ou implementação é a subclasse concreta.
+
+    O que isso significa na prática?
+    Quando você define um método ou atributo abstrato em uma classe abstrata, você está dizendo:
+
+    “Qualquer classe que herdar de mim deve implementar isso.”
+
+    🔹 Método abstrato
+    É uma função sem corpo, ou seja, sem implementação.
+    A subclasse concreta é obrigada a fornecer o corpo do método.
+
+    🔹 Atributo abstrato
+    É uma propriedade ou campo sem valor ou implementação definida.
+    A subclasse também é obrigada a definir esse valor (ou implementá-lo como get/set, dependendo da linguagem).
+
+    abstract class Animal {
+        abstract val nome: String
+    }
+
+    class Cachorro : Animal() {
+        override val nome: String = "Rex"
+    } */
     abstract class Animal {
 
         /* método concreto */
