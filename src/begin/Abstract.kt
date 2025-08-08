@@ -9,9 +9,7 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     em uma classe abstrata ou interface de que uma propriedade ou campo vai existir, mas quem vai realmente definir seu
     valor ou implementação é a subclasse concreta.
 
-    O que isso significa na prática?
     Quando você define um método ou atributo abstrato em uma classe abstrata, você está dizendo:
-
     “Qualquer classe que herdar de mim deve implementar isso.”
 
     🔹 Método abstrato
