@@ -19,27 +19,25 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     🔹 Atributo abstrato
     É uma propriedade ou campo sem valor ou implementação definida.
     A subclasse também é obrigada a definir esse valor (ou implementá-lo como get/set, dependendo da linguagem).
-
-    abstract class Animal {
-        abstract val nome: String
-    }
-
-    class Cachorro : Animal() {
-        override val nome: String = "Rex"
     } */
     abstract class Animal {
+
+        /* atributo abstrato */
+        abstract val nome: String
+
+        /* método abstrato */
+        abstract fun emitirSom()
 
         /* método concreto */
         fun respirar() {
             println("Respirando...")
         }
-
-        /* método abstrato */
-        abstract fun emitirSom()
-
     }
 
     class Cachorro : Animal() {
+
+        override val nome: String = "Rex"
+
         override fun emitirSom() {
             println("Latindo")
         }
