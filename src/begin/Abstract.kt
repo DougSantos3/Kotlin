@@ -13,12 +13,12 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     “Qualquer classe que herdar de mim deve implementar isso.”
 
     🔹 Método abstrato
-    É uma função sem corpo, ou seja, sem implementação.
-    A subclasse concreta é obrigada a fornecer o corpo do método.
+         É uma função sem corpo, ou seja, sem implementação.
+         A subclasse concreta é obrigada a fornecer o corpo do método.
 
     🔹 Atributo abstrato
-    É uma propriedade ou campo sem valor ou implementação definida.
-    A subclasse também é obrigada a definir esse valor (ou implementá-lo como get/set, dependendo da linguagem).
+         É uma propriedade ou campo sem valor ou implementação definida.
+         A subclasse também é obrigada a definir esse valor (ou implementá-lo como get/set, dependendo da linguagem).
     } */
     abstract class Animal {
 
