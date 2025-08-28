@@ -4,11 +4,9 @@ import br.com.vraptor.bitBank.begin.modelo.Cliente
 import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
 
     /* Classe abstrata - Serve como base para outras classes, fornecendo tanto:
-     🔹 propriedades(atributos) abstratos
-     🔹 métodos abstratos
+     🔹 propriedades(atributos) e metodos abstratos
     Que devem ser implementados pelas subclasses, mais também fornecem.
-    🔹 atributos concretos
-    🔹 métodos concretos(com comportamento padrão)
+     🔹 atributos concretos e métodos concretos(com comportamento padrão)
 
     Eles podem ser utilizados diretamente ou sobrescritos, caso deseja. Um atributo abstrato ou
     metodo é como uma "promessa" feita em uma classe abstrata ou interface de que uma propriedade/campo ou metodo vai
