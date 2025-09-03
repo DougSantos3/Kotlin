@@ -42,11 +42,8 @@ interface interface1 {
         Interface = só contrato (regras).
 
         Classe abstrata = contrato + implementação parcial (regras + comportamentos comuns).
-
-        👉 No Spring, geralmente usamos interface + implementação concreta (@Service) porque isso facilita:
-
+        No Spring, geralmente usamos interface + implementação concreta (@Service) porque isso facilita:
         Substituir a implementação (ex: SearchFacadeImpl hoje pode ser trocado por SearchFacadeV2Impl amanhã).
-
         Facilita testes unitários (mockamos a interface).
 
         ⚖️ Analogia simples:
