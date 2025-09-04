@@ -47,7 +47,6 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     }
 
     respirar() /* Metodo respirar já vem pronto e emitirSom() precisa ser implementado pela subclasse. */
-    @here
     /* Quando temos uma classe que deve ser herdada, mas não deve ser instânciada diretamente, podemos substituí-la de
     open para abstract, assegurando que o comportamento seja mantido conforme o esperado. */
 abstract class Conta(

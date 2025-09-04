@@ -126,7 +126,7 @@ interface interface1 {
     Herança	✅ Múltiplas interfaces	❌ Só pode herdar de uma classe abstrata
     Uso no Spring Boot	Geralmente para contratos + flexibilidade	Para compartilhar regras + comportamentos comuns
 
-    👉 Em resumo:
+    Em resumo:
 
     Interface: contrato puro → "o que deve ser feito".
 
