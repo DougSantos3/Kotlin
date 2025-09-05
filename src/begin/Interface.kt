@@ -4,12 +4,11 @@ interface interface1 {
 
     /*  Recebe uma senha do tipo Int e devolve um Boolean. */
     fun autentica(senha: Int) : Boolean
-
     /*  🔹 Interface
 
         É um contrato: define o que deve ser feito, mas não como.
         Não tem implementação de métodos (exceto default e static, mas isso é exceção).
-        Uma classe pode implementar várias interfaces.
+        Uma classe pode implementar várias interfaces tanto em Java como em Kotlin.
         Serve para padronizar comportamento entre classes diferentes.
 
         Exemplo:
