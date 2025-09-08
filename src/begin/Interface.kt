@@ -12,9 +12,14 @@ interface interface1 {
         Serve para padronizar comportamento entre classes diferentes.
 
         Exemplo:
-
+        // Java
         public interface Animal {
             void emitirSom();
+        }
+
+        // Kotlin
+        interface Animal {
+            fun emitirSom()
         }
 
         🔹 Classe abstrata
