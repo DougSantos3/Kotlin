@@ -11,13 +11,12 @@ interface interface1 {
         Uma classe pode implementar várias interfaces tanto em Java como em Kotlin.
         Serve para padronizar comportamento entre classes diferentes.
 
-        Exemplo:
-        // Java
+        Exemplo Java:
         public interface Animal {
             void emitirSom();
         }
 
-        // Kotlin
+        Exemplo Kotlin:
         interface Animal {
             fun emitirSom()
         }
