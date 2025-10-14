@@ -82,6 +82,7 @@ interface interface1 {
         }
 
         Implementação
+
         @Service
         public class SearchFacadeImpl extends AbstractSearchFacade implements SearchFacade {
 
