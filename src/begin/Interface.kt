@@ -4,7 +4,8 @@ interface interface1 {
 
     /*  Recebe uma senha do tipo Int e devolve um Boolean. */
     fun autentica(senha: Int) : Boolean
-    /*  🔹 Interface
+    /*
+        🔹 Interface
 
         É um contrato: define o que deve ser feito, mas não como.
         Não tem implementação de métodos (exceto default e static, mas isso é exceção).
