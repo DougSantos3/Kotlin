@@ -123,12 +123,13 @@ interface interface1 {
         }
 
     ⚖️ Diferença clara (Java e Kotlin)
-    Característica	Interface	Classe Abstrata
-    Métodos abstratos	✅ Sempre	✅ Pode ter
-    Métodos concretos	⚠️ Apenas default e static (Java 8+)	✅ Pode ter normalmente
-    Atributos	⚠️ Constantes (static final)	✅ Pode ter atributos normais
-    Construtores	❌ Não	✅ Pode ter
-    Herança	✅ Múltiplas interfaces	❌ Só pode herdar de uma classe abstrata
+    Característica	       Interface	                           Classe Abstrata
+    Métodos abstratos	   ✅ Sempre	                                ✅ Pode ter
+    Métodos concretos	   ⚠️ Apenas default e static (Java 8+)	    ✅ Pode ter normalmente
+    Atributos	           ⚠️ Constantes (static final)	            ✅ Pode ter atributos normais
+    Construtores	       ❌ Não	                                ✅ Pode ter
+    Herança	               ✅ Múltiplas interfaces	                ❌ Só pode herdar de uma classe abstrata
+
     Uso no Spring Boot	Geralmente para contratos + flexibilidade	Para compartilhar regras + comportamentos comuns
 
     Em resumo:
