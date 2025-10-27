@@ -132,8 +132,6 @@ interface interface1 {
 
     Uso no Spring Boot	Geralmente para contratos + flexibilidade	Para compartilhar regras + comportamentos comuns
 
-    Em resumo:
-
     Interface: contrato puro → "o que deve ser feito".
 
     Classe abstrata: contrato + implementação parcial → "o que deve ser feito + algumas coisas já prontas".
