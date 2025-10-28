@@ -61,7 +61,7 @@ interface interface1 {
 
 
 
-        Perfeito 🚀 Vou te mostrar Interface vs Classe Abstrata em Java e Kotlin, aplicado ao mesmo cenário para ficar
+        🚀 Interface vs Classe Abstrata em Java e Kotlin, aplicado ao mesmo cenário para ficar
         bem claro.
 
         🔹 Em Java
