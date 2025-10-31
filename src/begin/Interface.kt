@@ -123,6 +123,7 @@ interface interface1 {
         }
 
     ⚖️ Diferença clara (Java e Kotlin)
+
     Característica	       Interface	                           Classe Abstrata
     Métodos abstratos	   ✅ Sempre	                                ✅ Pode ter
     Métodos concretos	   ⚠️ Apenas default e static (Java 8+)	    ✅ Pode ter normalmente
