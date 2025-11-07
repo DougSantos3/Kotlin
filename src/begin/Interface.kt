@@ -95,12 +95,12 @@ interface interface1 {
         }
 
         🔹 Em Kotlin
-        Interface
+        // Interface
         interface SearchFacade {
             fun searchByTerm(term: String, from: String?, to: String?, postalCode: String?, clientIp: String?): SearchResponseDTO
         }
 
-        Classe Abstrata
+        // Classe Abstrata
         abstract class AbstractSearchFacade {
 
             abstract fun searchByTerm(term: String, from: String?, to: String?, postalCode: String?, clientIp: String?): SearchResponseDTO
@@ -110,7 +110,7 @@ interface interface1 {
             }
         }
 
-        Implementação
+        // Implementação
         import org.springframework.stereotype.Service
 
         @Service
