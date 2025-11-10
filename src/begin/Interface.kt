@@ -70,7 +70,7 @@ interface interface1 {
             SearchResponseDTO searchByTerm(String term, String from, String to, String postalCode, String clientIp);
         }
 
-        Classe Abstrata
+        //Classe Abstrata
         public abstract class AbstractSearchFacade {
 
             // método abstrato → deve ser implementado
