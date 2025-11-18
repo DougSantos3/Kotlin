@@ -29,8 +29,7 @@ interface interface1 {
         Uma classe só pode herdar de uma única classe abstrata (limitação do Java).
         Serve para definir regras e também comportamentos comuns que as subclasses vão herdar.
 
-        Exemplo:
-
+        //Exemplo:
         public abstract class Animal {
             // regra: quem herdar precisa implementar
             public abstract void emitirSom();
