@@ -64,7 +64,8 @@ interface interface1 {
         bem claro.
 
         🔹 Em Java
-        Interface
+
+        //Interface
         public interface SearchFacade {
             SearchResponseDTO searchByTerm(String term, String from, String to, String postalCode, String clientIp);
         }
