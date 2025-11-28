@@ -11,6 +11,7 @@ interface interface1 {
         Não tem implementação de métodos (exceto default e static, mas isso é exceção).
         Uma classe pode implementar várias interfaces tanto em Java como em Kotlin.
         Serve para padronizar comportamento entre classes diferentes.
+   */
 
         // Exemplo Java:
         public interface Animal {
