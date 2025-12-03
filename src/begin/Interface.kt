@@ -4,14 +4,12 @@ interface interface1 {
 
     //Recebe uma senha do tipo Int e devolve um Boolean.
     fun autentica(senha: Int) : Boolean
-    /*
-        🔹 Interface
+    /* 🔹 Interface
 
-        É um contrato: define o que deve ser feito, mas não como.
-        Não tem implementação de métodos (exceto default e static, mas isso é exceção).
-        Uma classe pode implementar várias interfaces tanto em Java como em Kotlin.
-        Serve para padronizar comportamento entre classes diferentes.
-   */
+    É um contrato: define o que deve ser feito, mas não como.
+    Não tem implementação de métodos (exceto default e static, mas isso é exceção).
+    Uma classe pode implementar várias interfaces tanto em Java como em Kotlin.
+    Serve para padronizar comportamento entre classes diferentes. */
 
         // Exemplo Java:
         public interface Animal {
@@ -23,12 +21,12 @@ interface interface1 {
             fun emitirSom()
         }
 
-        🔹 Classe abstrata
+        /* 🔹 Classe abstrata
 
         Pode ter métodos abstratos (sem implementação) e também métodos concretos (com implementação).
         Pode ter atributos e construtores.
         Uma classe só pode herdar de uma única classe abstrata (limitação do Java).
-        Serve para definir regras e também comportamentos comuns que as subclasses vão herdar.
+        Serve para definir regras e também comportamentos comuns que as subclasses vão herdar. */
 
         //Exemplo:
         public abstract class Animal {
