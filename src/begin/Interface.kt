@@ -57,8 +57,6 @@ interface interface1 {
         Quer que eu te mostre esse mesmo exemplo (interface vs classe abstrata) aplicado ao seu caso do SearchFacade,
         para ficar bem prático dentro do Spring Boot?
 
-
-
         🚀 Interface vs Classe Abstrata em Java e Kotlin, aplicado ao mesmo cenário para ficar
         bem claro. */
 
