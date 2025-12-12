@@ -12,7 +12,7 @@ import br.com.vraptor.bitBank.exception.SaldoInsuficienteExeption
     existir, mas quem vai realmente definir seu valor ou implementação é a subclasse concreta.
 
     Quando você define um método ou atributo abstrato em uma classe abstrata, você está dizendo:
-    “Qualquer classe que herdar de mim deve implementar isso.”
+    Qualquer classe que herdar de mim deve implementar isso.
 
     🔹 Método abstrato
          É uma função sem corpo, ou seja, sem implementação.
