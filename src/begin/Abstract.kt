@@ -80,7 +80,7 @@ abstract class Conta(
     normal(modelo.ContaSalario:  modelo.Conta), como também uma conta que permite a transferência
     (modelo.ContaCorrente: modelo.ContaTransferivel).
 
-    Poderia utilizar uma interface, porém, dado que a implementação de transferir é a mesma entre as classes e o
+    Poderia utilizar a interface, porém, dado que a implementação de transferir é a mesma entre as classes e o
     código altera o saldo, não seria possível ter uma implementação padrão na interface e iria replicar o mesmo código
     em ambas as contas que precisam transferir.
     Porém, ao manter a herança esse comportamento não pode ser reutilizado por outras classes que fogem do contexto,
